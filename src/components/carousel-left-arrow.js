@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../assets/css/carousel.css';
 
 const LeftArrow = (props) => {
   return (
