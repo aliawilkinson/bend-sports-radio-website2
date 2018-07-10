@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import pic1 from '../assets/images/carousel-images/image_1.jpeg';
+import pic1 from '../assets/images/carousel-images/image_1.jpg';
 import '../assets/css/carousel.css';
 
 const SlideOne = (props) => {

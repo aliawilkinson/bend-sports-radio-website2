@@ -1,20 +1,15 @@
 import React from 'react';
 import '../assets/css/app.css';
-import Header from './header';
-import Footer from './footer';
-import Carousel from './carousel-container';
+import LandingPage from './landing-page';
 
 const App = () => {
     return (
         <div>
             <div className="app">
-                <Header />
-                <Carousel />
-                <Footer />
+                <LandingPage />
             </div>
         </div>
-
     )
 };
 
-module.exports = App;
+export default App;

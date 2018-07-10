@@ -22,7 +22,7 @@ export default class Carousel extends Component {
     render() {
         const { slideCount } = this.state;
         return (
-            <div className="slider">
+            <div className="carousel">
 
                 {this.state.slideCount === 1 ? <SlideOne /> : null}
                 {this.state.slideCount === 2 ? <SlideTwo /> : null}
@@ -35,10 +35,18 @@ export default class Carousel extends Component {
         );
     }
     nextSlide() {
-        this.setState({ slideCount: this.state.slideCount + 1 })
+        if (this.state.slideCount === 3) {
+            this.setState({ slideCount: 1 })
+        } else {
+            this.setState({ slideCount: this.state.slideCount + 1 })
+        }
     }
 
     previousSlide() {
-        this.setState({ slideCount: this.state.slideCount - 1 })
+        if (this.state.slideCount === 1) {
+            this.setState({ slideCount: 3 });
+        } else {
+            this.setState({ slideCount: this.state.slideCount - 1 })
+        }
     }
 }
