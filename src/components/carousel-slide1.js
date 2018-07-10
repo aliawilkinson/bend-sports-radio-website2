@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import pic1 from '../assets/images/carousel-images/image_1.jpeg';
+import '../assets/css/carousel.css';
 
 const SlideOne = (props) => {
 
@@ -8,7 +9,6 @@ const SlideOne = (props) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
-
     return <div style={background} className="slide"></div>
 }
 
