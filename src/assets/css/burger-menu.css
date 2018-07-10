@@ -47,22 +47,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-x: hidden;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.5s;
-}
-
-form {
-    height: 10vh;
-}
-
-.expanded-menu-hide {
-    transform: translate(-100%);
-}
-
-.expanded-menu-show {
-    transform: translate(0);
 }
 
 .menu-container {
@@ -70,7 +54,32 @@ form {
     top: 0;
     height: 100%;
     width: 80%;
+    z-index: 2;
     background-color: aliceblue;
+    overflow-x: hidden;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+form {
+    height: 10vh;
+}
+
+.expanded-menu-hide {
+    transform: translate(-200%);
+}
+
+.expanded-menu-show {
+    transform: translate(-100%);
 }
 
 /*for desktop*/
