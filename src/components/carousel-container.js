@@ -28,8 +28,8 @@ export default class Carousel extends Component {
                 {this.state.slideCount === 2 ? <SlideTwo /> : null}
                 {this.state.slideCount === 3 ? <SlideThree /> : null}
 
-                <RightArrow nextSlide={this.nextSlide} />
-                <LeftArrow previousSlide={this.previousSlide} />
+                <RightArrow previousSlide={this.previousSlide} />
+                <LeftArrow nextSlide={this.nextSlide} />
 
             </div>
         );
