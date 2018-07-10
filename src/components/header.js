@@ -10,7 +10,8 @@ class Header extends Component {
 
         this.state = {
             menuShow: false,
-            menuSize: 'expanded-menu-hide'
+            menuSize: 'expanded-menu-hide',
+            menuBackground: 'hide'
         };
     }
 
@@ -18,24 +19,27 @@ class Header extends Component {
         if (this.state.menuShow) {
             this.setState({
                 menuShow: false,
-                menuSize: 'expanded-menu-hide'
+                menuSize: 'expanded-menu-hide',
+                menuBackground: 'hide'
             });
         } else {
             this.setState({
                 menuShow: true,
-                menuSize: 'expanded-menu-show'
+                menuSize: 'expanded-menu-show',
+                menuBackground: 'show'
             });
         }
     }
 
     render() {
+        const { menuSize, menuBackground, menuShow } = this.state;
         return (
             <div className="header-container">
                 <div className="header-logo">
                     <img src={logo} />
                 </div>
-                <Menu className={this.state.menuSize} />
-                <BurgerMenu open={this.state.menuShow} onClick={this.showExpandedMenu.bind(this)} />
+                <Menu size={menuSize} background={menuBackground} />
+                <BurgerMenu open={menuShow} onClick={this.showExpandedMenu.bind(this)} />
             </div>
         )
     }
