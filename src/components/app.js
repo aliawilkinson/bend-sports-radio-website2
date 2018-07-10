@@ -1,13 +1,20 @@
 import React from 'react';
 import '../assets/css/app.css';
 import Header from './header';
+import Footer from './footer';
+import Carousel from './carousel-container';
 
-const App = () => (
-    <div>
-        <div className="app">
-            <Header />
+const App = () => {
+    return (
+        <div>
+            <div className="app">
+                <Header />
+                <Carousel />
+                <Footer />
+            </div>
         </div>
-    </div>
-);
 
-export default App;
+    )
+};
+
+module.exports = App;
