@@ -1,4 +1,31 @@
 .slide {
     height: 40vh;
+    width: 80vw;
     padding: 5vh;
+    margin: 2vh auto;
+}
+
+.carousel {
+    position: relative;
+}
+
+.back-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+}
+
+.back-arrow:hover,
+.next-arrow:hover {
+    border-radius: 100%;
+    padding: 2px;
+    background-color: aliceblue;
+}
+
+.back-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
 }
