@@ -2,11 +2,14 @@ import React from 'react';
 import '../assets/css/burger-menu.css';
 
 const Menu = (props) => {
+    console.log(props);
     return (
-        <div className={`expanded-menu ${props.className}`}>
-            <div className="menu-container">
+        <section>
+            <div className={`menu-container ${props.size}`}>
             </div>
-        </div>
+            <div className={`expanded-menu ${props.background}`}>
+            </div>
+        </section>
     )
 };
 
