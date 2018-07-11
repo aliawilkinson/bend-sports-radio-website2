@@ -1,0 +1,12 @@
+.blurb {
+    padding: 3vh 6vh;
+    text-align: left;
+}
+
+.imgcont,
+.landing-icon {
+    height: 5vh;
+    margin: auto;
+    padding: 0 1vh;
+    text-align: center;
+}
