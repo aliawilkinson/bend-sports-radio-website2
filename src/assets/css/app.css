@@ -2,10 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #373D3F;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    color: #444444;
 }
 
 body {
-    height: 90%;
+    padding-bottom: 12vh;
+    position: relative;
+    text-align: center;
 }
