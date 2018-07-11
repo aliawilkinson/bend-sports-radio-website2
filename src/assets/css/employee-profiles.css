@@ -1,0 +1,31 @@
+.person-cont {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    margin: 1vw;
+    background-color: pink;
+}
+
+.person-cont,
+.person-cont img {
+    width: 45vw;
+}
+
+.person-cont h3,
+.person-cont h4 {
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+.person-cont h3 {
+    top: 10px;
+}
+
+.person-cont h4 {
+    bottom: 10px;
+}
+
+.person-cont img {
+    border-radius: 100%;
+}
