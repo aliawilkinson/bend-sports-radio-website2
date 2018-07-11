@@ -7,12 +7,16 @@ import football from '../assets/images/football.png';
 import soccer from '../assets/images/soccer.png';
 import basketball from '../assets/images/basketball.jpg';
 import Employees from './employee-profiles';
+import Scoreboard from './scoreboard';
+import ListenLive from './listen-live';
 
 class LandingPage extends Component {
     render() {
         return (
             <div className="landing-page">
                 <Header />
+                <ListenLive />
+                <Scoreboard />
                 <Carousel />
                 <p className="blurb">Locally owned and operated radio station proudly serving our community in Bend, Oregon. Check out some community events, stream from our live site, or advertise with us. We'd love to meet you.</p>
                 <div className="imgcont">

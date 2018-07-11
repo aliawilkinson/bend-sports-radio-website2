@@ -23,14 +23,13 @@ export default class Carousel extends Component {
         const { slideCount } = this.state;
         return (
             <div className="carousel">
-
+                <h4>Promotions, Events and Giveaways</h4>
                 {this.state.slideCount === 1 ? <SlideOne /> : null}
                 {this.state.slideCount === 2 ? <SlideTwo /> : null}
                 {this.state.slideCount === 3 ? <SlideThree /> : null}
 
                 <RightArrow previousSlide={this.previousSlide} />
                 <LeftArrow nextSlide={this.nextSlide} />
-
             </div>
         );
     }
