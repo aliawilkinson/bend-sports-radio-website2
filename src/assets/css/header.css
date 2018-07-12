@@ -23,12 +23,31 @@
 
 @media only screen and (min-width: 1000px) {
     .header-container {
-        justify-content: initial;
         align-items: left;
         background-image: none;
+        justify-content: space-between;
     }
     .header-container ul,
     .header-container li {
         display: initial;
+    }
+    .header-container li {
+        padding: 1vh 2vw;
+    }
+    .header-container li:hover {
+        color: white;
+        background-color: #739DD2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .header-container li {
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin: 2vh;
+        color: #555555;
     }
 }
