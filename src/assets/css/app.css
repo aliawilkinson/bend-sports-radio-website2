@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #444444;
+    overflow: scroll;
 }
 
 body {
@@ -11,8 +11,20 @@ body {
     position: relative;
     text-align: center;
     cursor: default;
+    color: #444444;
 }
 
 a {
     cursor: pointer;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #444444;
+}
+
+@media only screen and (min-width: 1000px) {
+    .landing-page {
+        padding-top: 170px;
+    }
 }

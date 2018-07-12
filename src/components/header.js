@@ -36,11 +36,13 @@ class Header extends Component {
         return (
             <div className="header-container">
                 <ul>
-                    <li>Listen Live</li>
-                    <li>On Air Shows</li>
-                    <li>Advertise</li>
-                    <li>About Us</li>
-                    <li>Home</li>
+                    <li>Listen Live <i class="fas fa-headphones"></i></li>
+                    <li>On Air Shows <i class="fas fa-music"></i></li>
+                    <li>Advertise <i class="fas fa-bolt"></i></li>
+                    <li>About Us <i class="fas fa-users"></i></li>
+                    <a href="">
+                        <li>Home <i class="fas fa-home"></i></li>
+                    </a>
                 </ul>
                 <div className="header-logo">
                     <img src={logo} />

@@ -3,9 +3,11 @@
     background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .header-logo,
@@ -19,12 +21,20 @@
     display: none;
 }
 
+.header-container a {
+    text-decoration: none;
+}
+
 /* for desktop*/
 
 @media only screen and (min-width: 1000px) {
     .header-container {
+        height: 170px;
         flex: none;
         background-image: initial;
+        padding-top: 70px;
+        position: fixed;
+        z-index: 1;
     }
     .header-container ul,
     .header-container li {
@@ -48,9 +58,5 @@
         cursor: pointer;
         margin: 2vh;
         color: #555555;
-    }
-    .header-logo,
-    .header-logo img {
-        float: right;
     }
 }
