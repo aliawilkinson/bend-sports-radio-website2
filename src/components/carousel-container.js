@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import SlideOne from './carousel-slide1';
 import SlideTwo from './carousel-slide2';
 import SlideThree from './carousel-slide3';
+import SlideFour from './carousel-slide4';
 import RightArrow from './carousel-left-arrow';
 import LeftArrow from './carousel-right-arrow';
 import '../assets/css/carousel.css';
@@ -26,6 +27,7 @@ export default class Carousel extends Component {
                 {this.state.slideCount === 1 ? <SlideOne /> : null}
                 {this.state.slideCount === 2 ? <SlideTwo /> : null}
                 {this.state.slideCount === 3 ? <SlideThree /> : null}
+                {this.state.slideCount === 4 ? <SlideFour /> : null}
 
                 <RightArrow previousSlide={this.previousSlide} />
                 <LeftArrow nextSlide={this.nextSlide} />
@@ -33,7 +35,7 @@ export default class Carousel extends Component {
         );
     }
     nextSlide() {
-        if (this.state.slideCount === 3) {
+        if (this.state.slideCount === 4) {
             this.setState({ slideCount: 1 })
         } else {
             this.setState({ slideCount: this.state.slideCount + 1 })
@@ -42,7 +44,7 @@ export default class Carousel extends Component {
 
     previousSlide() {
         if (this.state.slideCount === 1) {
-            this.setState({ slideCount: 3 });
+            this.setState({ slideCount: 4 });
         } else {
             this.setState({ slideCount: this.state.slideCount - 1 })
         }

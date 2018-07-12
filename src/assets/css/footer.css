@@ -60,6 +60,13 @@ footer-container a:hover {
     padding: 0.5em;
 }
 
+.offices-cont a,
+.offices-cont p,
+.fa-building,
+.fa-phone {
+    color: white;
+}
+
 @media only screen and (min-width: 1000px) {
     .footer-container {
         flex-direction: row;
