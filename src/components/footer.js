@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/css/footer.css';
 import logo from '../assets/images/foxlogo-fp.png';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
     constructor() {
@@ -9,9 +10,11 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer-container">
-                <div className="footer-logo">
-                    <img src={logo} />
-                </div>
+                <Link to="/">
+                    <div className="footer-logo">
+                        <img src={logo} />
+                    </div>
+                </Link>
                 <div className="social-media-links-cont">
                     <p>
                         Follow us for Sports and Contest Updates:
@@ -36,28 +39,28 @@ class Footer extends Component {
                 </div>
 
                 <div className="advertise-cont">
-                    <a target="blank" href="">
+                    <Link to="/advertise">
                         <p>Advertise With Us <i className="fas fa-bolt"></i></p><br />
                         <p>See what radio can do for your business today.</p>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="housekeeping-cont">
                     <ul>
                         <li>
-                            <a target="blank" href="">
+                            <Link to="/contact">
                                 <p><i className="fas fa-address-book"></i>Contact Us</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a target="blank" href="">
+                            <Link to="/contest-rules">
                                 <p><i className="fas fa-trophy"></i>Contest Rules</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a target="blank" href="">
+                            <Link to="/employment">
                                 <p><i className="fas fa-users"></i>Employment</p>
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a target="blank" href="https://publicfiles.fcc.gov/fm-profile/kice">
@@ -74,16 +77,21 @@ class Footer extends Component {
                             <i className="far fa-building">
                             </i>
                         </div>
-                        <p>345 SW Cyber Dr<br />
-                            #101<br />
-                            Bend, OR 97702
+                        <p>
+                            <a target="blank" href="https://www.google.com/maps/place/345+SW+Cyber+Dr+%23101,+Bend,+OR+97702/@44.0468535,-121.3280864,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8c7d3d2e062d1:0xb84f128570c138ac!8m2!3d44.0468497!4d-121.3258977">
+                                345 SW Cyber Dr<br />
+                                #101<br />
+                                Bend, OR 97702
+                            </a>
                         </p>
                     </div>
                     <div>
                         <div>
                             <i className="fas fa-phone"></i>
                         </div>
-                        <p>(541) 388-3300</p>
+                        <p>
+                            <a href="tel:+1-541-388-3300">(541) 388-3300</a>
+                        </p>
                     </div>
                 </div>
             </div>
