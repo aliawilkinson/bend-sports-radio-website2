@@ -35,9 +35,6 @@ class Header extends Component {
         const { menuSize, menuBackground, menuShow } = this.state;
         return (
             <div className="header-container">
-                <div className="header-logo">
-                    <img src={logo} />
-                </div>
                 <ul>
                     <li>Listen Live</li>
                     <li>On Air Shows</li>
@@ -45,6 +42,9 @@ class Header extends Component {
                     <li>About Us</li>
                     <li>Home</li>
                 </ul>
+                <div className="header-logo">
+                    <img src={logo} />
+                </div>
                 <Menu size={menuSize} background={menuBackground} />
                 <BurgerMenu open={menuShow} onClick={this.showExpandedMenu.bind(this)} />
             </div>
