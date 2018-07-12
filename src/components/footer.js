@@ -31,7 +31,7 @@ class Footer extends Component {
                             </a>
                         </li>
                         <li>
-                            <a target="blank" href="https://www.instagram.com/foxsports/?hl=en">
+                            <a target="blank" href="https://www.instagram.com/sports94.9fm/">
                                 <p><i className="fab fa-instagram fa-lg"></i>Instagram</p>
                             </a>
                         </li>
@@ -53,9 +53,9 @@ class Footer extends Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contest-rules">
+                            <a target="blank" href="http://s3-us-west-2.amazonaws.com/bendradiocloud/wp-content/uploads/2016/09/19174303/generalcontestrules.pdf">
                                 <p><i className="fas fa-trophy"></i>Contest Rules</p>
-                            </Link>
+                            </a>
                         </li>
                         <li>
                             <Link to="/employment">
@@ -65,6 +65,11 @@ class Footer extends Component {
                         <li>
                             <a target="blank" href="https://publicfiles.fcc.gov/fm-profile/kice">
                                 <p><i className="fas fa-file"></i>FCC Public File</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="blank" href="https://www1.eeoc.gov/employers/upload/eeoc_self_print_poster.pdf">
+                                <p><i className="fas fa-file"></i>EEOC</p>
                             </a>
                         </li>
                     </ul>
@@ -94,6 +99,7 @@ class Footer extends Component {
                         </p>
                     </div>
                 </div>
+                <h6>Copyright @ 2018 Sunriver Broadcasting, LLC. All rights reserved</h6>
             </div>
         )
     }

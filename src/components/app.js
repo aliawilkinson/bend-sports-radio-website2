@@ -9,7 +9,6 @@ import About from './about';
 import Employees from './employee-profiles';
 import Advertise from './advertise';
 import Contact from './contact';
-import ContestRules from './contest-rules';
 import Employment from './employment';
 import ListenLive from './listen-live';
 
@@ -23,7 +22,6 @@ const App = () => {
             <Route path='/advertise' component={Advertise} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
-            <Route path='/contest-rules' component={ContestRules} />
             <Route path='/employment' component={Employment} />
             <Route path='/listen-live' component={ListenLive} />
             <Footer />

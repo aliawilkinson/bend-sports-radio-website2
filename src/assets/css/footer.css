@@ -85,4 +85,7 @@ footer-container a:hover {
     .offices-cont h4 {
         margin-bottom: initial;
     }
+    .footer-container h6 {
+        align-self: baseline;
+    }
 }
