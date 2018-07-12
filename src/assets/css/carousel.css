@@ -29,3 +29,12 @@
 .next-arrow {
     right: 5px;
 }
+
+@media only screen and (min-width: 1000px) {
+    .slide {
+        height: 60vh;
+        width: 100vw;
+        padding: 5vh;
+        margin: 2vh auto;
+    }
+}

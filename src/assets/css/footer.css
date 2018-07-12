@@ -47,10 +47,6 @@
     text-decoration: none;
 }
 
-li:hover {
-    color: white;
-}
-
 footer-container a:hover {
     color: white;
 }
