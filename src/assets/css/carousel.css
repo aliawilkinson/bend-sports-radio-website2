@@ -1,6 +1,6 @@
 .slide {
     height: 40vh;
-    width: 80vw;
+    width: 100vw;
     padding: 5vh;
     margin: 2vh auto;
 }
@@ -13,13 +13,8 @@
 .next-arrow {
     position: absolute;
     top: 50%;
-}
-
-.back-arrow:hover,
-.next-arrow:hover {
-    border-radius: 100%;
-    padding: 2px;
-    background-color: aliceblue;
+    color: white;
+    background-color: rgba(127, 127, 127, 0.5);
 }
 
 .back-arrow {
@@ -30,10 +25,19 @@
     right: 5px;
 }
 
+.fa-arrow-left,
+.fa-arrow-right {
+    color: white;
+}
+
+.back-arrow:hover,
+.next-arrow:hover {
+    background-color: rgba(127, 127, 127, 0.7);
+}
+
 @media only screen and (min-width: 1000px) {
     .slide {
         height: 60vh;
-        width: 100vw;
         padding: 5vh;
         margin: 2vh auto;
     }

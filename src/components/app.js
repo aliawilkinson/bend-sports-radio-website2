@@ -1,13 +1,17 @@
 import React from 'react';
 import '../assets/css/app.css';
 import LandingPage from './landing-page';
+import Header from './header';
+import Footer from './footer';
+import Scoreboard from './scoreboard';
 
 const App = () => {
     return (
-        <div>
-            <div className="app">
-                <LandingPage />
-            </div>
+        <div className="app">
+            <Scoreboard />
+            <Header />
+            <LandingPage />
+            <Footer />
         </div>
     )
 };
