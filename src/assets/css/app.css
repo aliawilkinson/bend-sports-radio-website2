@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    overflow: scroll;
 }
 
 body {
@@ -24,7 +23,11 @@ a:visited {
 }
 
 @media only screen and (min-width: 1000px) {
-    .landing-page {
+    .landing-page,
+    .employees,
+    .advertise,
+    .contact {
         padding-top: 170px;
+        min-height: 80vh;
     }
 }
