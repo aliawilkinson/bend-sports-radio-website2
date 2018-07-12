@@ -37,7 +37,7 @@ class Footer extends Component {
 
                 <div className="advertise-cont">
                     <a target="blank" href="">
-                        <p>Advertise With Us <i class="fas fa-bolt"></i></p><br />
+                        <p>Advertise With Us <i className="fas fa-bolt"></i></p><br />
                         <p>See what radio can do for your business today.</p>
                     </a>
                 </div>
@@ -46,17 +46,17 @@ class Footer extends Component {
                     <ul>
                         <li>
                             <a target="blank" href="">
-                                <p><i class="fas fa-address-book"></i>Contact Us</p>
+                                <p><i className="fas fa-address-book"></i>Contact Us</p>
                             </a>
                         </li>
                         <li>
                             <a target="blank" href="">
-                                <p><i class="fas fa-trophy"></i>Contest Rules</p>
+                                <p><i className="fas fa-trophy"></i>Contest Rules</p>
                             </a>
                         </li>
                         <li>
                             <a target="blank" href="">
-                                <p><i class="fas fa-users"></i>Employment</p>
+                                <p><i className="fas fa-users"></i>Employment</p>
                             </a>
                         </li>
                         <li>
@@ -71,7 +71,7 @@ class Footer extends Component {
                     <h4>Fox Sports 94.9 Offices</h4>
                     <div>
                         <div>
-                            <i class="far fa-building">
+                            <i className="far fa-building">
                             </i>
                         </div>
                         <p>345 SW Cyber Dr<br />
@@ -81,7 +81,7 @@ class Footer extends Component {
                     </div>
                     <div>
                         <div>
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                         </div>
                         <p>(541) 388-3300</p>
                     </div>
