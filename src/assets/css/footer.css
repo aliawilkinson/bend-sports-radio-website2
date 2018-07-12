@@ -7,8 +7,6 @@
     flex-direction: column;
 }
 
-/* flex-direction: row; */
-
 .footer-logo,
 .footer-logo img,
 .social-media-links-cont,
@@ -44,8 +42,6 @@
 .advertise-cont p {
     color: white;
 }
-
-/* width: 20vw; */
 
 .footer-container a {
     text-decoration: none;

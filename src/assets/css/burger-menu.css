@@ -75,11 +75,11 @@ form {
 }
 
 .expanded-menu-hide {
-    transform: translate(-200%);
+    transform: translate(-202%);
 }
 
 .expanded-menu-show {
-    transform: translate(-100%);
+    transform: translate(-103%);
 }
 
 /*for desktop*/
