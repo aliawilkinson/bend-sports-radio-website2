@@ -36,3 +36,15 @@ h3 {
 .person-cont img {
     border-radius: 100%;
 }
+
+/* for desktop*/
+
+@media only screen and (min-width: 1000px) {
+    .employee-cont {
+        display: inline-block;
+    }
+    .person-cont,
+    .person-cont img {
+        width: 20vw;
+    }
+}
