@@ -14,9 +14,9 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="landing-page">
+                <Scoreboard />
                 <Header />
                 <ListenLive />
-                <Scoreboard />
                 <Carousel />
                 <p className="blurb">Locally owned and operated radio station proudly serving our community in Bend, Oregon. Check out some community events, stream from our live site, or advertise with us. We'd love to meet you.</p>
                 <div className="imgcont">
