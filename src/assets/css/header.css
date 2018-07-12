@@ -23,9 +23,8 @@
 
 @media only screen and (min-width: 1000px) {
     .header-container {
-        align-items: left;
-        background-image: none;
-        justify-content: space-between;
+        flex: none;
+        background-image: initial;
     }
     .header-container ul,
     .header-container li {
@@ -49,5 +48,9 @@
         cursor: pointer;
         margin: 2vh;
         color: #555555;
+    }
+    .header-logo,
+    .header-logo img {
+        float: right;
     }
 }
