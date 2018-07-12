@@ -38,6 +38,13 @@ class Header extends Component {
                 <div className="header-logo">
                     <img src={logo} />
                 </div>
+                <ul>
+                    <li>Listen Live</li>
+                    <li>On Air Shows</li>
+                    <li>Advertise</li>
+                    <li>About Us</li>
+                    <li>Home</li>
+                </ul>
                 <Menu size={menuSize} background={menuBackground} />
                 <BurgerMenu open={menuShow} onClick={this.showExpandedMenu.bind(this)} />
             </div>
