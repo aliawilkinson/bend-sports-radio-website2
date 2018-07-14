@@ -10,6 +10,7 @@ class ListenLive extends Component {
     render() {
         return (
             <div id="audio_div">
+                Listen Live <i className="fas fa-headphones"></i>
                 <audio controls className="player" preload="false">
                     <source src="https://18543.live.streamtheworld.com/KCOEFMAAC_SC" />
                 </audio>
