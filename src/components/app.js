@@ -11,6 +11,7 @@ import Advertise from './advertise';
 import Contact from './contact';
 import Employment from './employment';
 import ListenLive from './listen-live';
+import WinFreeStuff from './winfreestuff';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
             <Header />
             <Route exact path="/" component={LandingPage} />
             <Route path='/on-air-shows' component={Employees} />
+            <Route path='/win-free-stuff' component={WinFreeStuff} />
             <Route path='/advertise' component={Advertise} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
