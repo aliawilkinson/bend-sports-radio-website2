@@ -51,15 +51,14 @@
 }
 
 .menu-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
-    width: 80%;
+    width: 80vw;
     z-index: 2;
     background-color: aliceblue;
     overflow-x: hidden;
     overflow: hidden;
-    text-align: center;
     transition: transform 0.5s;
 }
 
@@ -83,11 +82,28 @@ form {
     transform: translate(-103%);
 }
 
+.links-cont {
+    padding: 5vh;
+    text-align: left;
+    color: #444;
+}
+
+.links-cont h1 {
+    padding: 2vh 0;
+    border-bottom: solid 2px #DCDCDC;
+}
+
 /*for desktop*/
 
 @media only screen and (min-width: 1000px) {
     .burger-menu,
-    .expanded-menu-hide {
+    .expanded-menu-hide,
+    .expanded-menu-show,
+    .menu-container,
+    .show,
+    .open,
+    .burger-menu.open,
+    .burger-menu {
         display: none;
     }
 }
