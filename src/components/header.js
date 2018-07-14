@@ -42,8 +42,8 @@ class Header extends Component {
         const { menuSize, menuBackground, menuShow } = this.state;
         return (
             <div className="header-container">
+                <ListenLive />
                 <ul>
-                    <li>Listen Live <i className="fas fa-headphones"></i></li>
                     <Link to="./on-air-shows">
                         <li>On Air Shows <i className="fas fa-music"></i></li>
                     </Link>
