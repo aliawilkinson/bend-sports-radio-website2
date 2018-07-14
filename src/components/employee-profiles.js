@@ -11,14 +11,22 @@ import jt from '../assets/images/employees/jt-thebrick.jpg';
 import jason from '../assets/images/employees/jason-smith.jpg';
 
 var employeeProfiles = [
-    { name: 'Tracee Tuesday', img: tracee, show: 'The Fox Sports Report' },
+    {
+        name: 'Tracee Tuesday', img: tracee, show: 'The Fox Sports Report',
+        blurb: "As a multi-talented Central Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. When she is not on air, Tracee is an active Big Sister with Big Brothers Big Sisters of Central Oregon, trying fun restaurants around town, or white water rafting. Check out Tracee on air, or you can listen to her show ",
+        link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
+    },
+    {
+        name: 'Cody Mac and BP', img: codyBP, show: 'In The Seats with Cody Mac & BP',
+        blurb: "Central Oregon's very own local talk show with sports experts Cody, BP, and sometimes Chuck. Check out more from them on 94.9's facebook page ",
+        link: "https://www.facebook.com/FoxSports949/"
+    },
+    { name: 'Jason Smith', img: jason, show: 'The Jason Smith Show' },
     { name: 'Dan Patrick', img: dan, show: 'The Dan Patrick Show' },
     { name: 'Colin Cowherd', img: colin, show: 'The Herd with Colin Cowherd' },
     { name: 'Doug Gottlieb', img: doug, show: 'The Doug Gottlieb Show' },
     { name: 'Steve Gorman', img: steve, show: 'Steve Gorman Sports' },
-    { name: 'Cody Mac and BP', img: codyBP, show: 'In The Seats with Cody Mac & BP' },
-    { name: 'JT "The Brick"', img: jt, show: 'Sports with The Brick' },
-    { name: 'Jason Smith', img: jason, show: 'The Jason Smith Show' },
+    { name: 'JT "The Brick"', img: jt, show: 'Sports with The Brick' }
 ]
 
 const Employees = () => {
@@ -56,15 +64,18 @@ const Employees = () => {
     const employees = employeeProfiles.map((employee, index) => {
         return (
             <div key={index} className="employee-cont">
-                <h3>{employee['name']}</h3>
-                <div className="person-cont">
+                <a target="blank" href={employee['link']}>
+                    <h3>{employee['name']}</h3>
+                    <div className="person-cont">
 
-                    <img src={employee['img']} />
-                    {/* {circularText(employee['name'], 30)} */}
-                    {/* {circularText(employee['show'], 32)} */}
+                        <img src={employee['img']} />
+                        {/* {circularText(employee['name'], 30)} */}
+                        {/* {circularText(employee['show'], 32)} */}
 
-                </div>
-                <h3>{employee['show']}</h3>
+                    </div>
+                    <h3>{employee['show']}</h3>
+                    <p>{employee['blurb']}<a target="blank" href={employee['link']}><span className="link">{employee['link'] ? "here." : null}</span></a></p>
+                </a>
             </div>
         )
     });

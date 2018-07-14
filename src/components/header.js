@@ -4,10 +4,11 @@ import logo from '../assets/images/foxlogo-fp.png';
 import BurgerMenu from './burger-menu';
 import Menu from './menu';
 import { Link } from 'react-router-dom';
+import ListenLive from './listen-live';
 
 class Header extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             menuShow: false,
@@ -32,6 +33,11 @@ class Header extends Component {
         }
     }
 
+    componentWillReceiveProps() {
+        this.showExpandedMenu();
+        <BurgerMenu open={this.state.menuShow} onClick={this.showExpandedMenu.bind(this)} />
+    }
+
     render() {
         const { menuSize, menuBackground, menuShow } = this.state;
         return (
@@ -40,6 +46,9 @@ class Header extends Component {
                     <li>Listen Live <i className="fas fa-headphones"></i></li>
                     <Link to="./on-air-shows">
                         <li>On Air Shows <i className="fas fa-music"></i></li>
+                    </Link>
+                    <Link to="win-free-stuff">
+                        <li>Win Free Stuff <i className="fas fa-trophy"></i></li>
                     </Link>
                     <Link to="./advertise">
                         <li>Advertise <i className="fas fa-bolt"></i></li>
