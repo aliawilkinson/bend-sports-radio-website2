@@ -1,9 +1,0 @@
-.listen-live {
-    background-color: grey;
-}
-
-@media only screen and (min-width: 1000px) {
-    .listen-live {
-        display: none;
-    }
-}

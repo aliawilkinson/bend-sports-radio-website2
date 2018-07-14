@@ -1,10 +1,21 @@
-import React from 'react';
+
+
+import React, { Component } from 'react';
 import '../assets/css/listen-live.css';
 
-const ListenLive = () => {
-    return (
-        <div className="listen-live">Listen Live</div>
-    )
-}
+class ListenLive extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div id="audio_div">
+                <audio controls className="player" preload="false">
+                    <source src="https://18543.live.streamtheworld.com/KCOEFMAAC_SC" />
+                </audio>
+            </div>
+        )
+    }
+};
 
 export default ListenLive;
