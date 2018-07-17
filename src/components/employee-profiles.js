@@ -74,7 +74,10 @@ const Employees = () => {
 
                     </div>
                     <h3>{employee['show']}</h3>
-                    <p>{employee['blurb']}<a target="blank" href={employee['link']}><span className="link">{employee['link'] ? "here." : null}</span></a></p>
+                    <p>{employee['blurb']}
+                        <span className="link">{employee['link'] ? "here." : null}
+                        </span>
+                    </p>
                 </a>
             </div>
         )
