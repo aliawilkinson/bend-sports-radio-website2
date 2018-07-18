@@ -2,28 +2,37 @@
 
 import React, { Component } from 'react';
 import '../assets/css/listen-live.css';
+import radioWave from '../assets/images/radio_wave.gif';
 
 class ListenLive extends Component {
     constructor(props) {
         super(props);
         this.state = {
             playing: false,
-            icon: "fa fa-play-circle play fa-3x"
+            icon: "fa fa-play-circle play fa-4x"
+        }
+    }
+
+    onKeyPress() {
+        onKeyPress(32)
+        console.log(event);
+        event.addEventListener("spacebar", this.handleKeyPress, false);
+        if (event.keyCode === 32) {
+            console.log('key pressed');
         }
     }
 
     playAudio() {
         this.setState({ playing: !this.state.playing });
-        debugger;
         if (this.state.playing) {
             this.player.pause();
             this.setState({
-                icon: "fa fa-play-circle play fa-3x"
+                icon: "fa fa-play-circle play fa-4x"
             })
         } else {
             this.player.play();
             this.setState({
-                icon: "fas fa-pause-circle fa-3x"
+                icon: "fas fa-pause-circle fa-4x pause"
             })
         }
     }
@@ -31,17 +40,21 @@ class ListenLive extends Component {
     render() {
         return (
             <div className="listen-live-cont">
-                <p>Listen Live</p>
-                <div className="arrow-cont" onClick={this.playAudio.bind(this)}>
+                <h2 className="listen-child listen-text">Listen Live</h2>
+                <div className="listen-child radio-wave">
+                    <img src={radioWave} />
+                </div>
+                <div className="listen-child arrow-cont" onClick={this.playAudio.bind(this)}>
                     <i className={this.state.icon} aria-hidden="true"></i>
                 </div>
+
                 <div>
                     <audio ref={e => this.player = e} className="player" preload="false">
                         <source src="https://18543.live.streamtheworld.com/KCOEFMAAC_SC" />
                         Your browser does not support the audio element. Please switch to a modern browser (chrome, firefox, edge, etc.)
                     </audio>
                 </div>
-            </div>
+            </div >
         )
     }
 };
