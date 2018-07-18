@@ -18,7 +18,7 @@ const App = () => {
         <div className="app">
             <Scoreboard />
             <Header />
-            <ListenLive show="app" />
+            <ListenLive show="listen-on-app" />
             <Route exact path="/" component={LandingPage} />
             <Route path='/on-air-shows' component={Employees} />
             <Route path='/win-free-stuff' component={WinFreeStuff} />

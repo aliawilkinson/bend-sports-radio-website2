@@ -12,7 +12,6 @@ class ListenLive extends Component {
             icon: "fa fa-play-circle play fa-4x",
             show: props.show
         }
-        console.log(props.show);
     }
 
     onKeyPress() {
@@ -41,12 +40,12 @@ class ListenLive extends Component {
 
     render() {
         return (
-            <div className={`listen-live-cont ${this.props.show}`}>
+            <div className={`listen-live-cont ${this.props.show}`} onClick={this.playAudio.bind(this)}>
                 <h2 className="listen-child listen-text">Listen Live</h2>
                 <div className="listen-child radio-wave">
                     <img src={radioWave} />
                 </div>
-                <div className="listen-child arrow-cont" onClick={this.playAudio.bind(this)}>
+                <div className="listen-child arrow-cont">
                     <i className={this.state.icon} aria-hidden="true"></i>
                 </div>
 
