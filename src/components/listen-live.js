@@ -9,8 +9,10 @@ class ListenLive extends Component {
         super(props);
         this.state = {
             playing: false,
-            icon: "fa fa-play-circle play fa-4x"
+            icon: "fa fa-play-circle play fa-4x",
+            show: props.show
         }
+        console.log(props.show);
     }
 
     onKeyPress() {
@@ -39,7 +41,7 @@ class ListenLive extends Component {
 
     render() {
         return (
-            <div className="listen-live-cont">
+            <div className={`listen-live-cont ${this.props.show}`}>
                 <h2 className="listen-child listen-text">Listen Live</h2>
                 <div className="listen-child radio-wave">
                     <img src={radioWave} />
