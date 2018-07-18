@@ -26,7 +26,9 @@ a:visited {
     .landing-page,
     .employees,
     .advertise,
-    .contact {
+    .contact,
+    .winfreestuff,
+    .employment {
         padding-top: 190px;
         min-height: 80vh;
     }
