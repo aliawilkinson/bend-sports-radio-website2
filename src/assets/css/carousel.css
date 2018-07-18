@@ -35,6 +35,20 @@
     background-color: rgba(127, 127, 127, 0.7);
 }
 
+.carousel-dot {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #a5a4a4;
+    border: 1px solid rgba(127, 127, 127, 0.7);
+    height: 10px;
+    width: 10px;
+    margin: 1vh;
+}
+
+.dark-dot {
+    background-color: #739DD2;
+}
+
 @media only screen and (min-width: 1000px) {
     .slide {
         height: 60vh;

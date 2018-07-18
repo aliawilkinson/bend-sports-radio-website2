@@ -20,20 +20,29 @@ export default class Carousel extends Component {
         this.previousSlide = this.previousSlide.bind(this);
     }
 
-    render() {
-        const { slideCount } = this.state;
-        return (
-            <div className="carousel">
-                {this.state.slideCount === 1 ? <SlideOne /> : null}
-                {this.state.slideCount === 2 ? <SlideTwo /> : null}
-                {this.state.slideCount === 3 ? <SlideThree /> : null}
-                {this.state.slideCount === 4 ? <SlideFour /> : null}
+    autoNextSlide() {
+        if (this.state.slideCount === 4) {
+            return 1
+        } else {
+            return this.state.slideCount + 1
+        }
+    }
 
-                <RightArrow previousSlide={this.previousSlide} />
-                <LeftArrow nextSlide={this.nextSlide} />
-            </div>
+    autoSlideChange() {
+        this.setState({ slideCount: this.autoNextSlide() });
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.autoSlideChange(),
+            5000
         );
     }
+
+    handleDotClick(data) {
+        this.setState({ slideCount: data });
+    }
+
     nextSlide() {
         if (this.state.slideCount === 4) {
             this.setState({ slideCount: 1 })
@@ -48,5 +57,37 @@ export default class Carousel extends Component {
         } else {
             this.setState({ slideCount: this.state.slideCount - 1 })
         }
+    }
+
+    render() {
+        const { slideCount } = this.state;
+        return (
+            <div className="carousel">
+                {slideCount === 1 ? <SlideOne /> : null}
+                {slideCount === 2 ? <SlideTwo /> : null}
+                {slideCount === 3 ? <SlideThree /> : null}
+                {slideCount === 4 ? <SlideFour /> : null}
+
+                <RightArrow previousSlide={this.previousSlide} />
+                <LeftArrow nextSlide={this.nextSlide} />
+                <div className={`carousel-dot ${slideCount === 1 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(1)}>
+                </div>
+                <div className={`carousel-dot ${slideCount === 2 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(2)}>
+                </div>
+                <div className={`carousel-dot ${slideCount === 3 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(3)}>
+                </div>
+                <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(4)}>
+                </div>
+                {/* <i class="fas fa-pause"></i> */}
+            </div>
+        );
     }
 }

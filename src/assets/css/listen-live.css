@@ -1,5 +1,54 @@
-.header {
-    /* display: none; */
+.listen-on-header {
+    display: none;
+}
+
+.listen-live-cont {
+    position: relative;
+    /* top: 65px; */
+    left: -10px;
+    width: 300px;
+    height: 105px;
+    margin: auto;
+    background-image: url(/assets/images/dc42470….gif);
+    background-repeat: no-repeat;
+    /* background-position: 80% -20%; */
+    background-size: contain;
+    cursor: pointer;
+}
+
+.listen-child {
+    position: absolute;
+    width: 33%;
+}
+
+.arrow-cont {
+    top: 10%;
+    left: 0;
+}
+
+.listen-text {
+    color: #739DD2;
+    top: 9%;
+    left: 33%;
+    font-size: 1.9em;
+}
+
+.play {
+    color: rgba(65, 119, 185, 0.5);
+}
+
+.pause {
+    color: rgba(133, 134, 134, 0.5);
+}
+
+.radio-wave,
+.radio-wave img {
+    height: 105px;
+    right: 0;
+}
+
+.radio-wave img {
+    width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -10,36 +59,18 @@
         width: 300px;
         height: 105px;
         margin-left: auto;
-        /* background-image: url('../images/radio_wave.gif');
-    background-repeat: no-repeat;
-    background-position: 80% -20%; */
+        z-index: 1;
     }
-    .listen-child {
-        position: absolute;
-        width: 33%;
+    .listen-live-cont {
+        display: initial;
     }
-    .arrow-cont {
-        top: 10%;
-        left: 0;
+    .listen-on-app {
+        display: none;
     }
-    .listen-text {
-        color: #739DD2;
-        top: 9%;
-        left: 33%;
-        font-size: 1.9em;
+    .play:hover {
+        text-shadow: 1px 1px rgb(95, 208, 161);
     }
-    .play {
-        color: rgba(65, 119, 185, 0.7);
-    }
-    .pause {
-        color: rgba(133, 134, 134, 0.7);
-    }
-    .radio-wave,
-    .radio-wave img {
-        height: 105px;
-        right: 0;
-    }
-    .radio-wave img {
-        width: 100%;
+    .pause:hover {
+        text-shadow: 1px 1px #d0705f;
     }
 }

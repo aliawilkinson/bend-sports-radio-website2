@@ -46,7 +46,8 @@
         padding-left: 300px;
     }
     .header-container li {
-        padding: 1vh 2vw;
+        padding: 1vh;
+        margin: 1vh;
     }
     .header-container li:hover {
         color: white;
@@ -65,3 +66,16 @@
         color: #555555;
     }
 }
+
+@media only screen and (min-width: 1300px) {
+    .header-container li {
+        padding: 1vh 2vw;
+        margin: 0;
+    }
+    .header-logo,
+    .header-logo img {
+        top: -8%;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width:1200) {}
