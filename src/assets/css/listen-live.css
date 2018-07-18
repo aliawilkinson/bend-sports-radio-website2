@@ -1,46 +1,45 @@
-.listen-live-cont {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 300px;
-    height: 105px;
-    background-color: white;
-    margin-left: auto;
-    /* background-image: url('../images/radio_wave.gif');
+.header {
+    /* display: none; */
+}
+
+@media only screen and (min-width: 1000px) {
+    .listen-live-cont {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 300px;
+        height: 105px;
+        margin-left: auto;
+        /* background-image: url('../images/radio_wave.gif');
     background-repeat: no-repeat;
     background-position: 80% -20%; */
-}
-
-.listen-child {
-    position: absolute;
-    width: 33%;
-}
-
-.arrow-cont {
-    top: 10%;
-    left: 0;
-}
-
-.listen-text {
-    color: #739DD2;
-    top: 20%;
-    left: 33%;
-}
-
-.play {
-    color: rgba(65, 119, 185, 0.7);
-}
-
-.pause {
-    color: rgba(133, 134, 134, 0.7);
-}
-
-.radio-wave,
-.radio-wave img {
-    height: 105px;
-    right: 0;
-}
-
-.radio-wave img {
-    width: 100%;
+    }
+    .listen-child {
+        position: absolute;
+        width: 33%;
+    }
+    .arrow-cont {
+        top: 10%;
+        left: 0;
+    }
+    .listen-text {
+        color: #739DD2;
+        top: 9%;
+        left: 33%;
+        font-size: 1.9em;
+    }
+    .play {
+        color: rgba(65, 119, 185, 0.7);
+    }
+    .pause {
+        color: rgba(133, 134, 134, 0.7);
+    }
+    .radio-wave,
+    .radio-wave img {
+        height: 105px;
+        right: 0;
+    }
+    .radio-wave img {
+        width: 100%;
+    }
 }
