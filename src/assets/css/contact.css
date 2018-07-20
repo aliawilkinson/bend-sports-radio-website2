@@ -1,0 +1,26 @@
+.contact-pg-but {
+    display: inline-block;
+    margin: 2vh;
+}
+
+.form-cont {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50vw;
+    margin: 2vh auto;
+    height: 80vmin;
+}
+
+.form-cont label {
+    margin: 10vh;
+}
+
+.form-cont input {
+    margin: 2vh;
+    width: 20vw;
+    height: 5vh;
+}
+
+.form-cont textarea {
+    height: 30vh;
+    width: 20vw;
+}
