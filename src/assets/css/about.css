@@ -1,0 +1,47 @@
+.about img {
+    width: 30vw;
+    display: inline-block;
+}
+
+.about p {
+    display: inline-block;
+    width: 60vw;
+    vertical-align: top;
+    text-align: left;
+    padding: 0 5vw;
+}
+
+.about h1 {
+    display: inline-block;
+    padding-bottom: 7vh;
+}
+
+.about div {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 2vh;
+    color: #555555;
+    text-decoration: none;
+    width: 15vh;
+    border: 2px solid #5555;
+}
+
+.about a{
+    text-decoration: none;
+    color: #4177b9;
+}
+
+.about div:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: #739DD2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about a:hover {
+    color: white;
+}
