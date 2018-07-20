@@ -8,7 +8,7 @@ import { Route } from 'react-router-dom';
 import About from './about';
 import Employees from './employee-profiles';
 import Advertise from './advertise';
-import Contact from './contact';
+import Contact from './contact/contact';
 import Employment from './employment';
 import ListenLive from './listen-live';
 import WinFreeStuff from './winfreestuff';

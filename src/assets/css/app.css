@@ -28,8 +28,10 @@ a:visited {
     .advertise,
     .contact,
     .winfreestuff,
-    .employment {
+    .employment,
+    .about {
         padding-top: 190px;
         min-height: 80vh;
+        padding-bottom: 10vh;
     }
 }
