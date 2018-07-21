@@ -1,0 +1,26 @@
+.error-msg {
+    color: red;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.error-name {
+    top: 105px;
+}
+
+.error-phone {
+    top: 215px;
+}
+
+.error-email {
+    top: 325px;
+}
+
+.error-message {
+    bottom: 120px;
+}
+
+.form-group {
+    padding: 10px;
+}

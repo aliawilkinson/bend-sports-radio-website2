@@ -1,39 +1,95 @@
 import React, { Component } from 'react';
-import Field from './field.js';
+import Field from './field';
 import '../../assets/css/contact.css';
+import '../../assets/css/contact-error.css';
+import Error from './error';
 
 
 class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            phone: '',
-            email: '',
-            message: ''
+            name: {
+                val: '',
+                fieldValid: true
+            },
+            phone: {
+                val: '',
+                fieldValid: true
+            },
+            email: {
+                val: '',
+                fieldValid: true
+            },
+            message: {
+                val: '',
+                fieldValid: true
+            }
         };
+        var work = '';
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.reset = this.reset.bind(this);
     }
+
     handleInputChange(event) {
         const { name, value } = event.target;
         this.setState({
-            [name]: value
+            [name]: {
+                val: value,
+                fieldValid: true
+            },
         })
     }
 
-    handleSubmit() {
+    handleSubmit(e) {
         event.preventDefault();
-        this.props.add(this.state);
+        for (let key in this.state) {
+            if (this.state[key].val === '') {
+                this.setState({
+                    [key]: {
+                        val: this.state[key].val,
+                        fieldValid: false
+                    },
+                })
+            }
+            if (key === 'phone' && !this.state.phone.val.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
+                this.setState({
+                    [key]: {
+                        val: this.state[key].val,
+                        fieldValid: false
+                    },
+                })
+            }
+            if (key === 'email' && !this.state.email.val.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)) {
+                this.setState({
+                    [key]: {
+                        val: this.state[key].val,
+                        fieldValid: false
+                    },
+                })
+            }
+        }
     }
 
     reset() {
         this.setState({
-            name: '',
-            phone: '',
-            email: '',
-            message: ''
+            name: {
+                val: '',
+                fieldValid: true
+            },
+            phone: {
+                val: '',
+                fieldValid: true
+            },
+            email: {
+                val: '',
+                fieldValid: true
+            },
+            message: {
+                val: '',
+                fieldValid: true
+            }
         })
     }
     render() {
@@ -46,28 +102,32 @@ class Contact extends Component {
                     <form onSubmit={this.handleSubmit}>
                         <Field
                             name="name"
-                            label="name"
+                            label="name "
                             type="text"
-                            value={name}
+                            value={name.val}
                             onChange={this.handleInputChange} />
+                        <Error valid={name.fieldValid} field="name" fieldVal={name.val} />
                         <Field
                             name="phone"
                             label="phone"
                             type="text"
-                            value={phone}
+                            value={phone.val}
                             onChange={this.handleInputChange} />
+                        <Error valid={phone.fieldValid} field="phone" fieldVal={phone.val} />
                         <Field
                             name="email"
-                            label="email"
+                            label="email "
                             type="text"
-                            value={email}
+                            value={email.val}
                             onChange={this.handleInputChange} />
+                        <Error valid={email.fieldValid} field="email" fieldVal={email.val} />
                         <Field
                             name="message"
                             label="message"
                             type="textarea"
-                            value={message}
+                            value={message.val}
                             onChange={this.handleInputChange} />
+                        <Error valid={message.fieldValid} field="message" fieldVal={message.val} />
                         <div onClick={this.handleSubmit} className="contact-button contact-pg-but">
                             Submit
                         </div>
