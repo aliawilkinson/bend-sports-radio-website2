@@ -8,7 +8,7 @@ const About = () => {
         <div className="about">
             <img src={photo1} />
 
-            <div>
+            <div className="about-cont">
                 <h1>About</h1>
                 <br />
                 FOX Sports 94.9 Central Oregon gives listeners the opportunity to step away from their everyday stresses of life and immerse themselves into the world of sports entertainment. FOX Sports 94.9 is THE destination for the ultimate sports fan, featuring legendary sports talk hosts and sports fan's audio nirvana in Central Oregon!
@@ -17,7 +17,7 @@ const About = () => {
                 We are a locally owned and operated radio station.
                 <br />
                 <br />
-                <div><Link to="/contact">Contact Us</Link></div>
+                <div className="but"><Link to="/contact">Contact Us</Link></div>
             </div>
         </div>
     )

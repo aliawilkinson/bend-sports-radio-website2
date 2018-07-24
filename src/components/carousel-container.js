@@ -32,11 +32,19 @@ export default class Carousel extends Component {
         this.setState({ slideCount: this.autoNextSlide() });
     }
 
-    componentDidMount() {
+    startSlides() {
         this.timerID = setInterval(
             () => this.autoSlideChange(),
             5000
         );
+    }
+
+    componentDidMount() {
+        this.startSlides();
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID);
     }
 
     handleDotClick(data) {
@@ -86,7 +94,6 @@ export default class Carousel extends Component {
                     data="1"
                     onClick={() => this.handleDotClick(4)}>
                 </div>
-                {/* <i class="fas fa-pause"></i> */}
             </div>
         );
     }

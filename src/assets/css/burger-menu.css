@@ -73,9 +73,9 @@
     display: block;
 }
 
-form {
+/* form {
     height: 10vh;
-}
+} */
 
 .expanded-menu-hide {
     transform: translate(-100%);
