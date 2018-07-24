@@ -11,9 +11,6 @@ class Menu extends Component {
             <section>
                 <div className={`menu-container ${this.props.size}`}>
                     <div className="links-cont">
-                        <Link to="/listen-live">
-                            <h1><i className="fas fa-headphones"></i> Listen Live</h1>
-                        </Link>
                         <Link to="/on-air-shows">
                             <h1><i className="fas fa-music"></i> On Air Shows</h1>
                         </Link>

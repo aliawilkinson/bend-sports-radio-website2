@@ -4,14 +4,12 @@
 
 .listen-live-cont {
     position: relative;
-    /* top: 65px; */
     left: -10px;
     width: 300px;
     height: 105px;
     margin: auto;
     background-image: url(/assets/images/dc42470….gif);
     background-repeat: no-repeat;
-    /* background-position: 80% -20%; */
     background-size: contain;
     cursor: pointer;
 }
@@ -64,9 +62,6 @@
     }
     .listen-live-cont {
         display: initial;
-    }
-    .listen-on-app {
-        display: none;
     }
     .play:hover {
         text-shadow: 1px 1px rgb(95, 208, 161);
