@@ -29,7 +29,7 @@
 
 /* for desktop*/
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 770px) {
     .header-container {
         height: 170px;
         flex: none;
