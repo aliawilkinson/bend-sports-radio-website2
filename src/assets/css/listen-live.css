@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 770px) {
     .listen-live-cont {
         position: absolute;
         top: 65px;

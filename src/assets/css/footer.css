@@ -67,7 +67,7 @@ footer-container a:hover {
     color: white;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 770px) {
     .footer-container {
         flex-direction: row;
     }

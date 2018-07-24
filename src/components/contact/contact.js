@@ -99,7 +99,7 @@ class Contact extends Component {
                 <h1>Contact Us</h1>
                 <h2>Drop us a line, and we will get back to you promptly.</h2>
                 <div className="form-cont">
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit} id="contact" action="" method="post">
                         <Field
                             name="name"
                             label="name "

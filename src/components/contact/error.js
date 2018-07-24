@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 
 const Error = (props) => {
-    console.log('props from error comp', props.field, props.valid);
     var num = 1;
     if (props.valid === false) {
         switch (props.field) {

@@ -1,4 +1,4 @@
-.job-opportunity{
+.job-opportunity {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 3vh;
     margin: 10vh;
@@ -11,4 +11,12 @@
 .job-opportunity p {
     padding: 3vh;
     margin: 0 2vh;
+}
+
+.emp-but {
+    margin: 2vh 5vh;
+}
+
+.mail-link div {
+    margin: 4vh;
 }
