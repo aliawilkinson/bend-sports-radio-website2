@@ -17,6 +17,10 @@ class Header extends Component {
         };
     }
 
+    componentDidUpdate() {
+        console.log(this.props);
+    }
+
     showExpandedMenu() {
         if (this.state.menuShow) {
             this.setState({
