@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/css/app.css';
 import LandingPage from './landing-page';
-// import Header from './header';
 import Footer from './footer';
 import Scoreboard from './scoreboard';
 import { Route } from 'react-router-dom';

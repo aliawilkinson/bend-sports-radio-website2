@@ -6,12 +6,14 @@
 
 .ad-content {
     text-align: left;
-    width: 60vw;
+    width: 90vw;
     margin: auto;
     background-color: white;
     padding: 2vw;
     margin-bottom: 1vw;
     font-size: 22px;
+    left: 0;
+    position: relative;
 }
 
 .background {
@@ -24,14 +26,14 @@
 .contact-button {
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
     padding: 2vh;
     color: #555555;
     text-decoration: none;
-    width: 15vh;
+    width: 40vw;
     border: 2px solid #5555;
     margin: 0 auto 2vh auto;
 }
@@ -66,6 +68,7 @@
 
 .ad-headers {
     padding: 3vh 0;
+    font-size: 1em;
 }
 
 .ad-content ol {
@@ -92,4 +95,17 @@
 .ad-content p {
     padding-bottom: 3vh;
     line-height: 150%;
+}
+
+/*for mobile*/
+
+@media only screen and (min-width: 770px) {
+    .ad-content {
+        width: 60vw;
+        left: initial;
+        position: initial;
+    }
+    .contact-button {
+        width: 15vh;
+    }
 }

@@ -3,6 +3,7 @@ import Field from './field';
 import '../../assets/css/contact.css';
 import '../../assets/css/contact-error.css';
 import Error from './error';
+import axios from 'axios';
 
 
 class Contact extends Component {
@@ -24,7 +25,8 @@ class Contact extends Component {
             message: {
                 val: '',
                 fieldValid: true
-            }
+            },
+            cansend: false
         };
         var work = '';
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -42,8 +44,7 @@ class Contact extends Component {
         })
     }
 
-    handleSubmit(e) {
-        event.preventDefault();
+    dataValidation() {
         for (let key in this.state) {
             if (this.state[key].val === '') {
                 this.setState({
@@ -70,7 +71,43 @@ class Contact extends Component {
                 })
             }
         }
+        // trying to data validate/not send if the fields aren't filled out 
+        for (let key in this.state) {
+            if (key !== 'cansend') {
+                console.log('key from state: ', this.state[key].fieldValid)
+                if (this.state[key].fieldValid === false) {
+                    console.log((this.state[key].fieldValid))
+                    return false;
+                }
+            }
+        }
+        return true;
     }
+
+    handleSubmit(e) {
+        event.preventDefault();
+        this.dataValidation();
+        const { name, phone, email, message } = this.state;
+        axios({
+            method: "POST",
+            url: "/api/send-email",
+            data: {
+                name: name,
+                phone: phone,
+                email: email,
+                message: message
+            }
+        }).then((response) => {
+            if (response.data.msg === 'success') {
+                alert("Message Sent.");
+                this.reset();
+            } else if (response.data.msg === 'fail') {
+                alert("Message failed to send.")
+            }
+        })
+    }
+
+
 
     reset() {
         this.setState({
@@ -99,9 +136,11 @@ class Contact extends Component {
                 <h1>Contact Us</h1>
                 <h2>Drop us a line, and we will get back to you promptly.</h2>
                 <div className="form-cont">
-                    <form onSubmit={this.handleSubmit} id="contact" action="" method="post">
+                    {/* {{ msg }} */}
+                    <form onSubmit={this.handleSubmit.bind(this)} id="contact" method="post">
                         <Field
                             name="name"
+                            id="name"
                             label="name "
                             type="text"
                             value={name.val}
@@ -109,13 +148,15 @@ class Contact extends Component {
                         <Error valid={name.fieldValid} field="name" fieldVal={name.val} />
                         <Field
                             name="phone"
-                            label="phone"
+                            id="phone"
+                            label="phone "
                             type="text"
                             value={phone.val}
                             onChange={this.handleInputChange} />
                         <Error valid={phone.fieldValid} field="phone" fieldVal={phone.val} />
                         <Field
                             name="email"
+                            id="email"
                             label="email "
                             type="text"
                             value={email.val}
@@ -123,18 +164,19 @@ class Contact extends Component {
                         <Error valid={email.fieldValid} field="email" fieldVal={email.val} />
                         <Field
                             name="message"
-                            label="message"
+                            id="message"
+                            label="message "
                             type="textarea"
                             value={message.val}
                             onChange={this.handleInputChange} />
                         <Error valid={message.fieldValid} field="message" fieldVal={message.val} />
-                        <div onClick={this.handleSubmit} className="contact-button contact-pg-but">
-                            Submit
-                        </div>
-                        <div onClick={this.reset} className="contact-button clear contact-pg-but">
-                            Clear
-                        </div>
                     </form>
+                    <button type="submit" onClick={this.handleSubmit} className="contact-button contact-pg-but">
+                        Submit
+                        </button>
+                    <button onClick={this.reset} className="contact-button clear contact-pg-but">
+                        Clear
+                    </button>
                 </div>
             </div>
         )

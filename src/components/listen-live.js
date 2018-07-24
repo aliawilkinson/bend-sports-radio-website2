@@ -12,6 +12,7 @@ class ListenLive extends Component {
             icon: "fa fa-play-circle play fa-4x",
             show: props.show
         }
+        console.log(props);
     }
 
     onKeyPress() {
