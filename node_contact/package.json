@@ -1,0 +1,20 @@
+{
+  "name": "node_contact",
+  "version": "1.0.0",
+  "description": "Contact form application to be used with Radio client",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alia Wilkinson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

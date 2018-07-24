@@ -1,47 +1,65 @@
 .about img {
-    width: 30vw;
-    display: inline-block;
+    width: 80vw;
 }
 
-.about p {
-    display: inline-block;
-    width: 60vw;
-    vertical-align: top;
-    text-align: left;
-    padding: 0 5vw;
-}
-
-.about h1 {
-    display: inline-block;
-    padding-bottom: 7vh;
-}
-
-.about div {
+.about .but {
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    font-size: 1em;
     cursor: pointer;
     padding: 2vh;
     color: #555555;
-    text-decoration: none;
-    width: 15vh;
+    width: 20vh;
     border: 2px solid #5555;
+    display: block;
+    margin: 2vh auto;
 }
 
-.about a{
+.about .but:visited {
     text-decoration: none;
-    color: #4177b9;
 }
 
-.about div:hover {
-    border: 2px solid white;
-    color: white;
-    background-color: #739DD2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.about .about-cont {
+    padding: 5vw;
+    text-align: justify;
 }
 
-.about a:hover {
-    color: white;
+@media only screen and (min-width: 770px) {
+    .about .about-cont {
+        display: inline-block;
+        width: 60vw;
+        vertical-align: top;
+        text-align: left;
+        padding: 0 5vw;
+    }
+    .about .but {
+        display: inline-block;
+        margin: 2vh auto;
+        text-align: center;
+        text-decoration: none;
+        width: 15vh;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+    .about img {
+        width: 30vw;
+        display: inline-block;
+    }
+    .about h1 {
+        display: inline-block;
+        padding-bottom: 7vh;
+    }
+    .about a {
+        text-decoration: none;
+        color: #4177b9;
+    }
+    .about .but:hover {
+        border: 2px solid white;
+        color: white;
+        background-color: #739DD2;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about a:hover {
+        color: white;
+    }
 }
