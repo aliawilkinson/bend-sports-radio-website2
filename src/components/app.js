@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/app.css';
 import LandingPage from './landing-page';
-import Header from './header';
+// import Header from './header';
 import Footer from './footer';
 import Scoreboard from './scoreboard';
 import { Route } from 'react-router-dom';
@@ -12,12 +12,13 @@ import Contact from './contact/contact';
 import Employment from './employment';
 import ListenLive from './listen-live';
 import WinFreeStuff from './winfreestuff';
+import HeaderChange from './header';
 
 const App = () => {
     return (
         <div className="app">
             <Scoreboard />
-            <Header />
+            <HeaderChange />
             <ListenLive show="listen-on-app" />
             <Route exact path="/" component={LandingPage} />
             <Route path='/on-air-shows' component={Employees} />

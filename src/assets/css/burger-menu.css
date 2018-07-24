@@ -98,7 +98,7 @@ form {
 
 /*for desktop*/
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 770px) {
     .burger-menu,
     .expanded-menu-hide,
     .expanded-menu-show,
