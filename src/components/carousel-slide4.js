@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import pic4 from '../assets/images/carousel-images/bend.jpg';
+import pic4 from '../assets/images/golf_promo.jpg';
 import '../assets/css/carousel.css';
 
 const SlideFour = (props) => {
-
-    let background = {
-        backgroundImage: `url(${pic4})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-    }
-    return <div style={background} className="slide"></div>
+    return (<div className="slide">
+        <img src={pic4} />
+    </div>)
 }
 
 export default SlideFour;
