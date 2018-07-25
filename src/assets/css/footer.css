@@ -88,4 +88,17 @@ footer-container a:hover {
     .footer-container h6 {
         align-self: baseline;
     }
+    .offices-cont {
+        display: block;
+        flex: none;
+    }
+    .copyright-text {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+    }
+    .footer-container ul {
+        width: 200px;
+    }
 }
