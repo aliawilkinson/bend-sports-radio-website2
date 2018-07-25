@@ -1,12 +1,11 @@
-.slide {
-    height: 40vh;
+.slide,
+.slide img {
     width: 100vw;
-    padding: 5vh;
-    margin: 2vh auto;
 }
 
 .carousel {
     position: relative;
+    background-color: rgba(115, 157, 210, 0.1);
 }
 
 .back-arrow,
@@ -50,9 +49,26 @@
 }
 
 @media only screen and (min-width: 767px) {
-    .slide {
-        height: 60vh;
-        padding: 5vh;
-        margin: 2vh auto;
+    .slide,
+    .slide img {
+        width: 70vw;
+        height: 55vh;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .slide,
+    .slide img {
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .slide,
+    .slide img {
+        width: 60vw;
+        height: 35vw;
     }
 }
