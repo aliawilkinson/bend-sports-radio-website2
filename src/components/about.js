@@ -17,7 +17,11 @@ const About = () => {
                 We are a locally owned and operated radio station.
                 <br />
                 <br />
-                <div className="but"><Link to="/contact">Contact Us</Link></div>
+                <div className="contact-button about-but">
+                    <Link to="/contact">
+                        Contact
+                    </Link>
+                </div>
             </div>
         </div>
     )
