@@ -1,3 +1,5 @@
+/*for mobile*/
+
 .header-container {
     height: 15vh;
     background-image: url('../images/background.png');
@@ -27,7 +29,7 @@
     text-decoration: none;
 }
 
-/* for desktop*/
+/* for large mobile/tablet + */
 
 @media only screen and (min-width: 767px) {
     .header-container {
@@ -57,14 +59,7 @@
         justify-content: space-between;
         text-align: center;
     }
-    .header-container li {
-        padding: 5px;
-        margin: 5px;
-        vertical-align: top;
-    }
     .header-container li:hover {
-        color: white;
-        background-color: #739DD2;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .header-container li {
@@ -75,18 +70,59 @@
         transition-duration: 0.4s;
         cursor: pointer;
         /* margin: 2vh; */
-        color: #555555;
         /* border: 1px solid blue; */
+        padding: 5px;
+        margin: 5px;
+        vertical-align: top;
+        color: white;
+    }
+    .header-container li,
+    .header-container i {
+        line-height: 30px;
     }
     .link-cont {
         display: inline-block;
         height: 30px;
+        background-color: #739DD2;
+        margin: 2px;
     }
 }
 
-@media only screen and (min-width: 1300px) {}
+/*for tablet*/
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+    .link-cont {
+        vertical-align: top;
+        height: 70%;
+        padding: 2px;
+    }
+    .header-container ul {
+        height: 100%;
+    }
+    .header-container ul li {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    .arrow-cont {
+        top: 25%;
+    }
+    .header-logo,
+    .header-logo img {
+        top: -7px;
+    }
+    .header-container i {
+        display: block;
+    }
+}
+
+/*for large screens*/
 
 @media only screen and (min-width: 1300px) {
+    .header-container li,
+    .header-container i {
+        line-height: initial;
+    }
     .header-container li {
         padding: 1vh 2vw;
         margin: 0;
@@ -102,13 +138,15 @@
         width: initial;
     }
     .header-container li {
-        padding: 2vh s2vw;
+        padding: 2vh 2vw;
         border: none;
         border-right: 2px solid rgb(180, 178, 178);
+        color: #555;
     }
     .link-cont {
         width: initial;
         height: initial;
+        background-color: initial;
     }
     .header-container li {
         font-size: 16px;
