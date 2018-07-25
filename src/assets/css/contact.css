@@ -42,6 +42,14 @@
     border: 2px solid black;
 }
 
+.send-success {
+    color: green;
+}
+
+.send-fail {
+    color: red;
+}
+
 @media only screen and (min-width: 770px) {
     .form-cont {
         width: 90vw;
