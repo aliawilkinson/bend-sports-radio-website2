@@ -13,7 +13,7 @@ class LandingPage extends Component {
         return (
             <div className="landing-page">
                 <Carousel />
-                <p className="blurb">Locally owned and operated radio station proudly serving our community in Central Oregon. Check out some community events, stream from our live site, or advertise with us. We'd love to meet you.</p>
+                <p className="blurb">Locally owned and operated radio station proudly serving our community in Central Oregon. Check out some freebies, stream from our live site, or advertise with us. We'd love to meet you.</p>
                 <div className="imgcont">
                     <img src={football} className="landing-icon" />
                     <img src={soccer} className="landing-icon" />

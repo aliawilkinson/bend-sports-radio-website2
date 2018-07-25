@@ -98,7 +98,7 @@
 
 /*for desktop*/
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
     .burger-menu,
     .expanded-menu-hide,
     .expanded-menu-show,

@@ -1,15 +1,15 @@
-.winfreestuff{
+.winfreestuff {
     margin: auto;
 }
 
-.promo-card{
+.promo-card {
     width: 900px;
     margin: 2vh auto;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.promo-card a{
+.promo-card a {
     color: blue;
     text-decoration: none;
 }
