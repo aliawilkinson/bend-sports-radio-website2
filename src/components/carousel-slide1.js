@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import pic1 from '../assets/images/carousel-images/image_1.jpg';
+import pic1 from '../assets/images/intheseats_promo.png';
 import '../assets/css/carousel.css';
 
 const SlideOne = (props) => {
-
-    let background = {
-        backgroundImage: `url(${pic1})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-    }
-    return <div style={background} className="slide"></div>
+    return (<div className="slide">
+        <img src={pic1} />
+    </div>)
 }
 
 export default SlideOne;

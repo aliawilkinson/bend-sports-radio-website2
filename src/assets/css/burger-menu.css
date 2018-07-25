@@ -10,7 +10,6 @@
     /* background-color: aliceblue;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); */
     margin: 2vh;
-    position: fixed;
 }
 
 .burger-menu .bar1,
@@ -72,10 +71,6 @@
 .show {
     display: block;
 }
-
-/* form {
-    height: 10vh;
-} */
 
 .expanded-menu-hide {
     transform: translate(-100%);
