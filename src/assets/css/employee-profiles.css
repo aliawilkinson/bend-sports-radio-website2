@@ -48,7 +48,7 @@ h3 {
 
 /* for desktop*/
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
     .employee-cont {
         display: inline-block;
         vertical-align: top;

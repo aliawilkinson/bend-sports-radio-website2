@@ -12,7 +12,7 @@
 
 .header-logo,
 .header-logo img {
-    height: 10vh;
+    height: 70px;
     text-align: center;
     position: relative;
     top: 0;
@@ -29,7 +29,7 @@
 
 /* for desktop*/
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
     .header-container {
         height: 170px;
         flex: none;
@@ -38,16 +38,29 @@
         position: fixed;
         z-index: 1;
     }
+    .header-logo,
+    .header-logo img {
+        height: 70px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 20px;
+    }
     .header-container ul,
     .header-container li {
         display: initial;
     }
     .header-container ul {
         padding-left: 300px;
+        /* width: 800px; */
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
     }
     .header-container li {
-        padding: 1vh;
-        margin: 1vh;
+        padding: 5px;
+        margin: 5px;
+        vertical-align: top;
     }
     .header-container li:hover {
         color: white;
@@ -55,17 +68,23 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .header-container li {
-        text-align: center;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 0.8em;
         -webkit-transition-duration: 0.4s;
         /* Safari */
         transition-duration: 0.4s;
         cursor: pointer;
-        margin: 2vh;
+        /* margin: 2vh; */
         color: #555555;
+        /* border: 1px solid blue; */
+    }
+    .link-cont {
+        display: inline-block;
+        height: 30px;
     }
 }
+
+@media only screen and (min-width: 1300px) {}
 
 @media only screen and (min-width: 1300px) {
     .header-container li {
@@ -76,10 +95,22 @@
     .header-logo img {
         top: -8%;
     }
-}
-
-@media only screen and (min-width: 760px) and (max-width:1200) {
-    .header-container {
-        background-color: blue;
+    .first-li {
+        border-left: 2px solid rgb(180, 178, 178);
+    }
+    .header-container ul {
+        width: initial;
+    }
+    .header-container li {
+        padding: 2vh s2vw;
+        border: none;
+        border-right: 2px solid rgb(180, 178, 178);
+    }
+    .link-cont {
+        width: initial;
+        height: initial;
+    }
+    .header-container li {
+        font-size: 16px;
     }
 }

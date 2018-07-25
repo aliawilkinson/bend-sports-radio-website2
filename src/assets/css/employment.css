@@ -1,14 +1,14 @@
 .job-opportunity {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 3vh;
-    margin: 10vh;
+    margin: 5vh auto;
     text-align: left;
-    width: 60vw;
-    margin: auto;
+    width: 90vw;
 }
 
 .job-opportunity li,
-.job-opportunity p {
+.job-opportunity p,
+.human-res {
     padding: 3vh;
     margin: 0 2vh;
 }
@@ -21,4 +21,18 @@
     margin: 4vh;
 }
 
-@media only screen and (min-width: 770px) {}
+.human-res {
+    text-align: center;
+    border: 2px solid #555;
+}
+
+.human-res div {
+    margin: 2vh auto;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 767px) {
+    .job-opportunity {
+        width: 60vw;
+    }
+}

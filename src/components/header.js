@@ -48,21 +48,31 @@ class Header extends Component {
             <div className="header-container">
                 <ListenLive show="listen-on-header" />
                 <ul>
-                    <Link to="./on-air-shows">
-                        <li>On Air Shows <i className="fas fa-music"></i></li>
-                    </Link>
-                    <Link to="win-free-stuff">
-                        <li>Win Free Stuff <i className="fas fa-trophy"></i></li>
-                    </Link>
-                    <Link to="./advertise">
-                        <li>Advertise <i className="fas fa-bolt"></i></li>
-                    </Link>
-                    <Link to="/about">
-                        <li>About Us <i className="fas fa-users"></i></li>
-                    </Link>
-                    <Link to="/">
-                        <li>Home <i className="fas fa-home"></i></li>
-                    </Link>
+                    <div className="link-cont">
+                        <Link to="./on-air-shows">
+                            <li className="first-li">On Air Shows <i className="fas fa-music"></i></li>
+                        </Link>
+                    </div>
+                    <div className="link-cont">
+                        <Link to="win-free-stuff">
+                            <li>Win Free Stuff <i className="fas fa-trophy"></i></li>
+                        </Link>
+                    </div>
+                    <div className="link-cont">
+                        <Link to="./advertise">
+                            <li>Advertise <i className="fas fa-bolt"></i></li>
+                        </Link>
+                    </div>
+                    <div className="link-cont">
+                        <Link to="/about">
+                            <li>About Us <i className="fas fa-users"></i></li>
+                        </Link>
+                    </div>
+                    <div className="link-cont">
+                        <Link to="/">
+                            <li>Home <i className="fas fa-home"></i></li>
+                        </Link>
+                    </div>
                 </ul>
                 <Link to="/">
                     <div className="header-logo">

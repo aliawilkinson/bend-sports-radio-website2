@@ -50,7 +50,7 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
     .listen-live-cont {
         position: absolute;
         top: 65px;
@@ -62,6 +62,9 @@
     }
     .listen-live-cont {
         display: initial;
+    }
+    .listen-on-app {
+        display: none;
     }
     .play:hover {
         text-shadow: 1px 1px rgb(95, 208, 161);
