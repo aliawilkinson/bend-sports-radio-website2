@@ -26,7 +26,7 @@ class Contact extends Component {
                 val: '',
                 fieldValid: true
             },
-            cansend: false
+            messageSent: null
         };
         var work = '';
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -45,48 +45,46 @@ class Contact extends Component {
     }
 
     dataValidation() {
+        let isValid = true;
         for (let key in this.state) {
-            if (this.state[key].val === '') {
-                this.setState({
-                    [key]: {
-                        val: this.state[key].val,
-                        fieldValid: false
-                    },
-                })
-            }
-            if (key === 'phone' && !this.state.phone.val.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
-                this.setState({
-                    [key]: {
-                        val: this.state[key].val,
-                        fieldValid: false
-                    },
-                })
-            }
-            if (key === 'email' && !this.state.email.val.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)) {
-                this.setState({
-                    [key]: {
-                        val: this.state[key].val,
-                        fieldValid: false
-                    },
-                })
-            }
-        }
-        // trying to data validate/not send if the fields aren't filled out 
-        for (let key in this.state) {
-            if (key !== 'cansend') {
-                console.log('key from state: ', this.state[key].fieldValid)
-                if (this.state[key].fieldValid === false) {
-                    console.log((this.state[key].fieldValid))
-                    return false;
+            if (this.state[key].val) {
+                if (this.state[key].val === '') {
+                    isValid = false;
+                    this.setState({
+                        [key]: {
+                            val: this.state[key].val,
+                            fieldValid: false
+                        },
+                    })
+                }
+                if (key === 'phone' && !this.state.phone.val.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
+                    isValid = false;
+                    this.setState({
+                        [key]: {
+                            val: this.state[key].val,
+                            fieldValid: false
+                        },
+                    })
+                }
+                if (key === 'email' && !this.state.email.val.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/)) {
+                    isValid = false;
+                    this.setState({
+                        [key]: {
+                            val: this.state[key].val,
+                            fieldValid: false
+                        },
+                    })
                 }
             }
+            return isValid;
         }
-        return true;
     }
 
     handleSubmit(e) {
         event.preventDefault();
-        this.dataValidation();
+        const isValid = this.dataValidation();
+        if (!isValid) return;
+
         const { name, phone, email, message } = this.state;
         axios({
             method: "POST",
@@ -98,11 +96,16 @@ class Contact extends Component {
                 message: message
             }
         }).then((response) => {
-            if (response.data.msg === 'success') {
-                alert("Message Sent.");
+            console.log('from handle submit: ', response.data.success);
+            if (response.data.success === true) {
+                this.setState({
+                    messageSent: true
+                });
                 this.reset();
-            } else if (response.data.msg === 'fail') {
-                alert("Message failed to send.")
+            } else if (response.data.success === false) {
+                this.setState({
+                    messageSent: false
+                });
             }
         })
     }
@@ -136,7 +139,8 @@ class Contact extends Component {
                 <h1>Contact Us</h1>
                 <h2>Drop us a line, and we will get back to you promptly.</h2>
                 <div className="form-cont">
-                    {/* {{ msg }} */}
+                    {this.state.messageSent === false ? <div className="send-fail">Message failed to send.</div> : null}
+                    {this.state.messageSent === true ? <div className="send-success">Message sent! We will get back to you as soon as possible.</div> : null}
                     <form onSubmit={this.handleSubmit.bind(this)} id="contact" method="post">
                         <Field
                             name="name"
@@ -177,6 +181,8 @@ class Contact extends Component {
                     <button onClick={this.reset} className="contact-button clear contact-pg-but">
                         Clear
                     </button>
+                    {this.state.messageSent === false ? <div className="send-fail">Message failed to send. Please call (541)388-3300 for more info.</div> : null}
+                    {this.state.messageSent === true ? <div className="send-success">Message sent! We will get back to you as soon as possible.</div> : null}
                 </div>
             </div>
         )

@@ -14,8 +14,6 @@ app.use(bodyParser.json());
 
 app.post('/api/send-email', (req, res, next) => {
 
-    console.log('WE MADE IT HERE:', req.body.message.val);
-
     const output = `
     <p>You have a new contact request.</p>
     <h3>Contact Details:</h3>
@@ -53,11 +51,11 @@ app.post('/api/send-email', (req, res, next) => {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            res.status(500).send('Failed to send message');
+            res.send({ success: false, error: 'Failed to send message' });
             return console.log(error);
         }
 
-        res.render('contact', { msg: 'Email has been sent.' })
+        res.send({ success: true, message: 'Email sent' });
         // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
         // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     });
