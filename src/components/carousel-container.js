@@ -33,11 +33,10 @@ export default class Carousel extends Component {
     }
 
     startSlides() {
-        // this.timerID = setInterval(
-        //     () => this.autoSlideChange(),
-        //     5000
-        // );
-        console.log('nyan')
+        this.timerID = setInterval(
+            () => this.autoSlideChange(),
+            5000
+        );
     }
 
     componentDidMount() {
