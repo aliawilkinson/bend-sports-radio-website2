@@ -17,10 +17,6 @@ class Header extends Component {
         };
     }
 
-    componentDidUpdate() {
-        console.log(this.props);
-    }
-
     showExpandedMenu() {
         if (this.state.menuShow) {
             this.setState({
@@ -39,7 +35,7 @@ class Header extends Component {
 
     componentWillReceiveProps() {
         this.showExpandedMenu();
-        <BurgerMenu open={this.state.menuShow} onClick={this.showExpandedMenu.bind(this)} />
+        return <BurgerMenu open={this.state.menuShow} onClick={this.showExpandedMenu.bind(this)} />
     }
 
     render() {

@@ -1,6 +1,7 @@
 .slide,
 .slide img {
     width: 100vw;
+    height: 40vh;
 }
 
 .carousel {
@@ -48,20 +49,12 @@
     background-color: #739DD2;
 }
 
-@media only screen and (min-width: 767px) {
-    .slide,
-    .slide img {
-        width: 70vw;
-        height: 55vh;
-        margin: auto;
-    }
-}
-
 @media only screen and (min-width: 900px) {
     .slide,
     .slide img {
-        width: 70vw;
-        height: 70vh;
+        width: 100vw;
+        height: 60vw;
+        margin: auto;
     }
 }
 

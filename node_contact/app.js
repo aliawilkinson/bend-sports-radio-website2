@@ -48,7 +48,6 @@ app.post('/api/send-email', (req, res, next) => {
         html: output // html body
     };
 
-    // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             res.send({ success: false, error: 'Failed to send message' });
@@ -56,8 +55,6 @@ app.post('/api/send-email', (req, res, next) => {
         }
 
         res.send({ success: true, message: 'Email sent' });
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     });
 })
 
