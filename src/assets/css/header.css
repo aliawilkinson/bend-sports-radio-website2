@@ -18,6 +18,7 @@
     text-align: center;
     position: relative;
     top: 0;
+    right: -10px;
 }
 
 .header-container ul,
@@ -27,6 +28,7 @@
 
 .header-container a {
     text-decoration: none;
+    width: 100px;
 }
 
 /* for large mobile/tablet + */
@@ -54,10 +56,6 @@
     }
     .header-container ul {
         padding-left: 300px;
-        /* width: 800px; */
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
     }
     .header-container li:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,8 +67,6 @@
         /* Safari */
         transition-duration: 0.4s;
         cursor: pointer;
-        /* margin: 2vh; */
-        /* border: 1px solid blue; */
         padding: 5px;
         margin: 5px;
         vertical-align: top;
@@ -94,14 +90,12 @@
     .link-cont {
         vertical-align: top;
         height: 70%;
-        padding: 2px;
     }
     .header-container ul {
         height: 100%;
     }
     .header-container ul li {
         padding: 0;
-        margin: 0;
         display: block;
     }
     .arrow-cont {
@@ -140,15 +134,23 @@
     .header-container li {
         padding: 2vh 2vw;
         border: none;
-        border-right: 2px solid rgb(180, 178, 178);
         color: #555;
+        margin: 0;
+        border-left: 2px solid rgb(180, 178, 178);
+        /* border-right: 2px solid rgb(180, 178, 178); */
     }
     .link-cont {
         width: initial;
         height: initial;
         background-color: initial;
+        margin: 0;
     }
     .header-container li {
         font-size: 16px;
+    }
+    .header-container li:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+        background-color: #739DD2;
     }
 }
