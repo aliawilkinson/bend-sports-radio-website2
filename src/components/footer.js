@@ -99,7 +99,9 @@ class Footer extends Component {
                         </p>
                     </div>
                 </div>
-                <h6>Copyright @ 2018 Sunriver Broadcasting, LLC. All rights reserved</h6>
+                <div className="copyright-text">
+                    <h6>Copyright @ 2018 Sunriver Broadcasting, LLC. All rights reserved</h6>
+                </div>
             </div>
         )
     }
