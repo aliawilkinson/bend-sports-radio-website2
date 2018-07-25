@@ -47,7 +47,7 @@ class Contact extends Component {
     dataValidation() {
         let isValid = true;
         for (let key in this.state) {
-            if (this.state[key].val) {
+            if (this.state[key]) {
                 if (this.state[key].val === '') {
                     isValid = false;
                     this.setState({
@@ -76,12 +76,13 @@ class Contact extends Component {
                     })
                 }
             }
-            return isValid;
         }
+        return isValid;
     }
 
     handleSubmit(e) {
         event.preventDefault();
+        this.dataValidation();
         const isValid = this.dataValidation();
         if (!isValid) return;
 

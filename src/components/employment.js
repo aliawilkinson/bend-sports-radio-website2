@@ -52,7 +52,18 @@ class Employment extends Component {
                     <h4>Application</h4>
                     <p>Qualified candidates with a strong desire to control their income are encouraged to forward resume and cover letter to:</p>
 
-                    <p>Human Resources at humanresources@bendradiogroup.com or mail to 345 SW Cyber Dr. #101-103 Bend OR 97702.  NO PHONE CALLS PLEASE.</p>
+                    <div className="human-res">Human Resources at
+                        <div>
+
+                            {this.state.emailClicked === false ?
+                                <div onClick={this.displayEmail} className="contact-button emp-but">
+                                    Display Email
+                                </div>
+                                :
+                                <a className="mail-link" href="mailto:humanresources@bendradiogroup.com">
+                                    <div>humanresources@bendradiogroup.com</div>
+                                </a>}
+                        </div> or mail to 345 SW Cyber Dr. #101-103 Bend OR 97702.<br />  NO PHONE CALLS PLEASE.</div>
                     <p>The Bend Radio Group is an Equal Opportunity Employer. (EEOC)</p>
 
 
@@ -64,20 +75,6 @@ class Employment extends Component {
                     <h4>EDUCATION OR TRAINING:</h4>
 
                     <p>College degree but not required</p>
-
-                    <h4>Contact:</h4>
-
-                    <div>
-
-                        {this.state.emailClicked === false ?
-                            <div onClick={this.displayEmail} className="contact-button emp-but">
-                                Display Email
-                            </div>
-                            :
-                            <a className="mail-link" href="mailto:humanresources@bendradiogroup.com">
-                                <div>humanresources@bendradiogroup.com</div>
-                            </a>}
-                    </div>
                 </div>
             </div>
         )
