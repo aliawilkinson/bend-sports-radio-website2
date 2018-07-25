@@ -1,15 +1,46 @@
 .winfreestuff {
     margin: auto;
+    text-align: left;
+    color: #555;
+}
+
+.winfreestuff h3 {
+    font-weight: 200;
+}
+
+.promo-card p {
+    padding: 3vh;
 }
 
 .promo-card {
-    width: 900px;
-    margin: 2vh auto;
-    padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .promo-card a {
     color: blue;
     text-decoration: none;
+}
+
+.promo-card img {
+    width: 100vw;
+}
+
+@media only screen and (min-width: 767px) {
+    .winfreestuff {
+        text-align: center;
+    }
+    .promo-card {
+        width: 80vw;
+    }
+    .promo-card img {
+        width: 60vw;
+    }
+    .promo-card {
+        margin: 2vh auto;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .promo-card p {
+        padding: 0;
+    }
 }

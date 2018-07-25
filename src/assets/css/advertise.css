@@ -95,6 +95,11 @@
 .ad-content p {
     padding-bottom: 3vh;
     line-height: 150%;
+    font-weight: 200;
+}
+
+.ad-content h2 {
+    font-weight: 200;
 }
 
 /*for mobile*/

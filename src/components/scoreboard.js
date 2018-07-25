@@ -12,8 +12,10 @@ class Scoreboard extends Component {
 
     render() {
         return (
-            <div ref={e => this.foxElement = e} className="scoreboard">
-                <wis-scorestrip ismodule="true"></wis-scorestrip>
+            <div>
+                <div ref={e => this.foxElement = e} className="scoreboard">
+                    <wis-scorestrip ismodule="true"></wis-scorestrip>
+                </div>
             </div>
         )
     }
