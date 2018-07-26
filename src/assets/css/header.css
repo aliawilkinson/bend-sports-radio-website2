@@ -48,7 +48,6 @@
         text-align: center;
         position: relative;
         top: 0;
-        left: 20px;
     }
     .header-container ul,
     .header-container li {
@@ -124,6 +123,7 @@
     .header-logo,
     .header-logo img {
         top: -8%;
+        left: 20px;
     }
     .first-li {
         border-left: 2px solid rgb(180, 178, 178);
