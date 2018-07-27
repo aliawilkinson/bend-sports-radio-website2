@@ -67,6 +67,10 @@ footer-container a:hover {
     color: white;
 }
 
+.footer-container i {
+    margin-right: 5px;
+}
+
 @media only screen and (min-width: 767px) {
     .footer-container {
         flex-direction: row;
@@ -94,7 +98,7 @@ footer-container a:hover {
     }
     .copyright-text {
         display: block;
-        width: 100%;
+        width: 90%;
         position: absolute;
         bottom: 5px;
     }

@@ -35,7 +35,7 @@
 
 h3 {
     top: 10px;
-    margin-bottom: 1vh;
+    margin-bottom: 15px;
 }
 
 .person-cont h4 {
@@ -57,6 +57,7 @@ h3 {
     .person-cont img,
     .employee-cont p {
         width: 20vw;
+        margin: auto;
     }
     .person-cont img:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

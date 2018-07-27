@@ -57,6 +57,17 @@ class Contact extends Component {
                         },
                     })
                 }
+                // debugger; //if the name or message fields come back blank, say it's invalid
+                // if (key === 'name' || key === 'message' &&
+                //     this.state.name.val.match(/^\s*$/)) {
+                //     isValid = false;
+                //     this.setState({
+                //         [key]: {
+                //             val: this.state[key].val,
+                //             fieldValid: false
+                //         },
+                //     })
+                // }
                 if (key === 'phone' && !this.state.phone.val.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
                     isValid = false;
                     this.setState({
