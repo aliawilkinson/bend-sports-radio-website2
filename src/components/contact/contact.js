@@ -4,6 +4,7 @@ import '../../assets/css/contact.css';
 import '../../assets/css/contact-error.css';
 import Error from './error';
 import axios from 'axios';
+import footballLoad from '../../assets/images/load-football.gif'
 
 
 class Contact extends Component {
@@ -26,7 +27,8 @@ class Contact extends Component {
                 val: '',
                 fieldValid: true
             },
-            messageSent: null
+            messageSent: null,
+            shadowDivState: 'shadow-div-hide'
         };
         var work = '';
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -47,8 +49,8 @@ class Contact extends Component {
     dataValidation() {
         let isValid = true;
         for (let key in this.state) {
-            if (this.state[key]) {
-                if (this.state[key].val === '') {
+            if (key !== 'shadowDivState' && key !== 'messageSent') {
+                if (this.state[key].val === '' || this.state[key].val.match(/^\s*$/)) {
                     isValid = false;
                     this.setState({
                         [key]: {
@@ -57,17 +59,6 @@ class Contact extends Component {
                         },
                     })
                 }
-                // debugger; //if the name or message fields come back blank, say it's invalid
-                // if (key === 'name' || key === 'message' &&
-                //     this.state.name.val.match(/^\s*$/)) {
-                //     isValid = false;
-                //     this.setState({
-                //         [key]: {
-                //             val: this.state[key].val,
-                //             fieldValid: false
-                //         },
-                //     })
-                // }
                 if (key === 'phone' && !this.state.phone.val.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)) {
                     isValid = false;
                     this.setState({
@@ -96,7 +87,9 @@ class Contact extends Component {
         this.dataValidation();
         const isValid = this.dataValidation();
         if (!isValid) return;
-
+        this.setState(
+            { shadowDivState: "shadow-div-show" }
+        );
         const { name, phone, email, message } = this.state;
         axios({
             method: "POST",
@@ -111,12 +104,14 @@ class Contact extends Component {
             console.log('from handle submit: ', response.data.success);
             if (response.data.success === true) {
                 this.setState({
-                    messageSent: true
+                    messageSent: true,
+                    // shadowDivState: "shadow-div-hide"
                 });
                 this.reset();
             } else if (response.data.success === false) {
                 this.setState({
-                    messageSent: false
+                    messageSent: false,
+                    // shadowDivState: "shadow-div-hide"
                 });
             }
         })
@@ -145,9 +140,17 @@ class Contact extends Component {
         })
     }
     render() {
-        const { name, phone, email, message } = this.state;
+        const { name, phone, email, message, shadowDivState } = this.state;
         return (
             <div className="contact">
+                <div className={shadowDivState}>
+                    <div className="shadow-div-message">
+                        <p>Sending your email now . . . </p>
+                        <div className="img-cont">
+                            <img src={footballLoad} />
+                        </div>
+                    </div>
+                </div>
                 <h1>Contact Us</h1>
                 <h2>Drop us a line, and we will get back to you promptly.</h2>
                 <div className="form-cont">

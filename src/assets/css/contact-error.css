@@ -27,6 +27,32 @@
     padding: 20px;
 }
 
+.shadow-div-hide {
+    display: none;
+}
+
+.shadow-div-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 70px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 8, 8, 0.5);
+    z-index: 1;
+    color: white;
+}
+
+.shadow-div-message p {
+    margin-top: 100px;
+    color: white;
+    font-weight: 500;
+}
+
+.img-cont img {
+    width: 30%;
+}
+
 /*for desktop*/
 
 @media only screen and (min-width: 767px) {
