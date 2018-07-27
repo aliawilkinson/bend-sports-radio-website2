@@ -105,13 +105,13 @@ class Contact extends Component {
             if (response.data.success === true) {
                 this.setState({
                     messageSent: true,
-                    // shadowDivState: "shadow-div-hide"
+                    shadowDivState: "shadow-div-hide"
                 });
                 this.reset();
             } else if (response.data.success === false) {
                 this.setState({
                     messageSent: false,
-                    // shadowDivState: "shadow-div-hide"
+                    shadowDivState: "shadow-div-hide"
                 });
             }
         })
