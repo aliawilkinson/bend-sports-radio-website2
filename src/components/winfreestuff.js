@@ -19,12 +19,6 @@ const WinFreeStuff = () => {
 
                 <p>Plus you could also win a $100 Gift Card to Pro Golf!</p>
             </div>
-            <div className="promo-card">
-                <img src={foreigner} />
-                <p>Fox Sports 94.9 welcomes Foreigner &amp; Whitesnake to the Sunlight Supply Amphitheater.</p>
-
-                <p>Listen for your chance to win FREE TICKETS to see Foreigner &amp; Whitesnake LIVE on the Juke Box Heroes Tour on July 28 ONLY from Fox Sports 94.9!</p>
-            </div>
         </div>
     )
 }
