@@ -12,18 +12,18 @@ import jason from '../assets/images/employees/jason-smith.jpg';
 
 var employeeProfiles = [
     {
-        name: 'Tracee Tuesday',
-        img: tracee,
-        show: 'The Fox Sports Report',
-        blurb: "As a multi-talented Central Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. When she is not on air, Tracee is an active Big Sister with Big Brothers Big Sisters of Central Oregon, trying fun restaurants around town, or white water rafting. A sports fan from very young, Tracee was recruited to play flag football in elementary school because of her speed on the field and, was recruited as the only ‘girl’ on the team. Tracee also ran track, played basketball, dodge ball and softball. Originally from the San Francisco Bay Area, Tracee’s favorite teams include: Oakland Raiders, Golden State Warriors, San Jose Sharks and Manchester United F.C.Check out Tracee on air, or you can listen to her show ",
-        link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
-    },
-    {
         name: 'Cody Mac and BP',
         img: codyBP,
         show: 'In The Seats with Cody Mac & BP',
         blurb: "Central Oregon's very own local talk show with sports experts Cody, BP, and sometimes Chuck. Check out more from them on 94.9's facebook page ",
         link: "https://www.facebook.com/FoxSports949/"
+    },
+    {
+        name: 'Tracee Tuesday',
+        img: tracee,
+        show: 'The Fox Sports Report',
+        blurb: "As a multi-talented Central Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. When she is not on air, Tracee is an active Big Sister with Big Brothers Big Sisters of Central Oregon, trying fun restaurants around town, or white water rafting. A sports fan from very young, Tracee was recruited to play flag football in elementary school because of her speed on the field and, was recruited as the only ‘girl’ on the team. Tracee also ran track, played basketball, dodge ball and softball. Originally from the San Francisco Bay Area, Tracee’s favorite teams include: Oakland Raiders, Golden State Warriors, San Jose Sharks and Manchester United F.C.Check out Tracee on air, or you can listen to her show ",
+        link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
     },
     {
         name: 'Jason Smith',
