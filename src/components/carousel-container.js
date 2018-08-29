@@ -11,7 +11,7 @@ import airshow18 from '../assets/images/carousel-images/airshow18.jpg';
 import osu from '../assets/images/carousel-images/osu.jpg';
 import raiders from '../assets/images/carousel-images/raiders.jpg';
 
-const pictures = [airshow18, osu, golfPromo, raiders, localRadio];
+const pictures = [osu, golfPromo, raiders, localRadio];
 
 class Carousel extends Component {
     constructor(props) {
@@ -107,10 +107,6 @@ class Carousel extends Component {
                 <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
                     data="1"
                     onClick={() => this.handleDotClick(4)}>
-                </div>
-                <div className={`carousel-dot ${slideCount === 5 ? 'dark-dot' : ''}`}
-                    data="1"
-                    onClick={() => this.handleDotClick(5)}>
                 </div>
             </div>
         );
