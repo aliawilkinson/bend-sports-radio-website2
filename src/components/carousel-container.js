@@ -10,8 +10,9 @@ import golfPromo from '../assets/images/carousel-images/golf.jpg';
 import airshow18 from '../assets/images/carousel-images/airshow18.jpg';
 import osu from '../assets/images/carousel-images/osu.jpg';
 import raiders from '../assets/images/carousel-images/raiders.jpg';
+import backyardBend from '../assets/images/carousel-images/backyard_bend.png';
 
-const pictures = [osu, golfPromo, raiders, localRadio];
+const pictures = [backyardBend, osu, golfPromo, raiders, localRadio];
 
 class Carousel extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ class Carousel extends Component {
     }
 
     createDots() {
-        console.log(pictures);
+        // console.log(pictures);
         var dots = pictures.map((item, index) => {
             return
             (<div className={`carousel-dot ${slideCount === i ? 'dark-dot' : ''}`}
@@ -88,7 +89,7 @@ class Carousel extends Component {
         const { slideCount } = this.state;
         return (
             <div className="carousel">
-                <Slide img={pictures[this.state.slideCount - 1]} />
+                <Slide img={pictures[this.state.slideCount - 1]} slideNum={slideCount} />
 
                 <RightArrow previousSlide={this.previousSlide} />
                 <LeftArrow nextSlide={this.nextSlide} />
@@ -105,6 +106,10 @@ class Carousel extends Component {
                     onClick={() => this.handleDotClick(3)}>
                 </div>
                 <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(4)}>
+                </div>
+                <div className={`carousel-dot ${slideCount === 5 ? 'dark-dot' : ''}`}
                     data="1"
                     onClick={() => this.handleDotClick(4)}>
                 </div>

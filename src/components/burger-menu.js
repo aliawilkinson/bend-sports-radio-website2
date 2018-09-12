@@ -4,7 +4,6 @@ import '../assets/css/burger-menu.css';
 const BurgerMenu = ({ open, ...props }) => {
     return (
         <div className={open ? "burger-menu open" : "burger-menu"} {...props}>
-            {console.log(...props)}
             <div className="bar1" key="b1" />
             <div className="bar2" key="b2" />
             <div className="bar3" key="b3" />
