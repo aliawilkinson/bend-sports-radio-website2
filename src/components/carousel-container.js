@@ -4,13 +4,12 @@ import Slide from './carousel-slide';
 import RightArrow from './carousel-left-arrow';
 import LeftArrow from './carousel-right-arrow';
 import '../assets/css/carousel.css';
-import inTheSeats from '../assets/images/intheseats_promo.png';
-import localRadio from '../assets/images/carousel-images/local.png';
+import inTheSeats from '../assets/images/intheseats_promo.jpg';
+import localRadio from '../assets/images/carousel-images/local.jpg';
 import golfPromo from '../assets/images/carousel-images/golf.jpg';
-import airshow18 from '../assets/images/carousel-images/airshow18.jpg';
 import osu from '../assets/images/carousel-images/osu.jpg';
 import raiders from '../assets/images/carousel-images/raiders.jpg';
-import backyardBend from '../assets/images/carousel-images/backyard_bend.png';
+import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 
 const pictures = [backyardBend, osu, golfPromo, raiders, localRadio];
 

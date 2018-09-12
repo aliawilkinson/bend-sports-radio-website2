@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import golf from '../assets/images/golf_promo.jpg';
 import foreigner from '../assets/images/foreignerpromo.jpg';
-import airshow18 from '../assets/images/carousel-images/airshow18.jpg';
 import tssford from '../assets/images/tssford.jpeg';
 import '../assets/css/winfreestuff.css';
 
