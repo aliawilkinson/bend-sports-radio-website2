@@ -6,6 +6,11 @@
     box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.3);
 }
 
+.employee-cont p {
+    overflow: scroll;
+    height: 20vh;
+}
+
 .employee-cont a,
 .employee-cont a:visited {
     text-decoration: none;
@@ -57,6 +62,7 @@ h3 {
     .employee-cont p {
         width: 20vw;
         margin: auto;
+        overflow: scroll;
     }
     .person-cont img:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

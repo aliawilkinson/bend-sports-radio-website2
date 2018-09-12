@@ -15,14 +15,14 @@ var employeeProfiles = [
         name: 'Cody Mac and BP',
         img: codyBP,
         show: 'In The Seats with Cody Mac & BP',
-        blurb: "Central Oregon's very own local talk show with sports experts Cody, BP, and sometimes Chuck. Check out more from them on 94.9's facebook page ",
+        blurb: "“Your not so local, local sports show” brings local sports and and National sports with a Central Oregon view.  In the Seats is your show for Beavers, Ducks Trailblazers and all sport you care about in Oregon. Lots of giveaways and a fast pace makes this the fastest hour in sports radio.",
         link: "https://www.facebook.com/FoxSports949/"
     },
     {
         name: 'Tracee Tuesday',
         img: tracee,
         show: 'The Fox Sports Report',
-        blurb: "As a multi-talented Central Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. When she is not on air, Tracee is an active Big Sister with Big Brothers Big Sisters of Central Oregon, trying fun restaurants around town, or white water rafting. A sports fan from very young, Tracee was recruited to play flag football in elementary school because of her speed on the field and, was recruited as the only ‘girl’ on the team. Tracee also ran track, played basketball, dodge ball and softball. Originally from the San Francisco Bay Area, Tracee’s favorite teams include: Oakland Raiders, Golden State Warriors, San Jose Sharks and Manchester United F.C.Check out Tracee on air, or you can listen to her show ",
+        blurb: "As a Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. A sports fan from very young age, Tracee ran track and played basketball and softball. Originally from the San Francisco Bay Area, Tracee’s favorite teams include: Oakland Raiders and Golden State Warriors. Check our her page .",
         link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
     },
     {
@@ -36,14 +36,14 @@ var employeeProfiles = [
         name: 'Dan Patrick',
         img: dan,
         show: 'The Dan Patrick Show',
-        blurb: "Dan is a senior writer for Sports Illustrated and hosts Football Night in America (on NBC). He also hosts Sports Jeopardy!, distributed by Crackle. Dan may be best known as an anchor on ESPN's SportsCenter, where he hosted the show with Keith Olberman, Stuart Scott and Rich Eisen from 1989-2006. He hosted The Dan Patrick Show on ESPN Radio from 1999-2007. The Dan Patrick Show also airs on NBCSN and AT&T's Regional ROOT SPORTS channels. Check them out ",
+        blurb: "The Dan Patrick Show features the most extensive A-list interviews from the world of sports and offers Dan's unique perspective and dry sense of humor on the top stories and personalities of the day. Check them out ",
         link: "http://www.danpatrick.com/dan/"
     },
     {
         name: 'Colin Cowherd',
         img: colin,
         show: 'The Herd with Colin Cowherd',
-        blurb: "	The Herd with Colin Cowherd is a thought-provoking, opinionated, and topic-driven journey through the top sports stories of the day. Colins unique take on the sports world and unprecedented storytelling ability entertains audiences around the country while making them think, laugh, and immediately react. Check them out ",
+        blurb: "The Herd with Colin Cowherd is opinionated and topic-driven journey through the top sports stories of the day. Colin storytelling ability entertains while making listeners think, laugh, and immediately react. Check them out ",
         link: "https://foxsportsradio.iheart.com/featured/the-herd-with-colin-cowherd/about/"
     },
     {

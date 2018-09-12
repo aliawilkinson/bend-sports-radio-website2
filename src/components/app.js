@@ -12,8 +12,13 @@ import Employment from './employment';
 import ListenLive from './listen-live';
 import WinFreeStuff from './winfreestuff';
 import HeaderChange from './header';
+import ReactGA from 'react-ga';
 
 const App = () => {
+    function initializeReactGA() {
+        ReactGA.initialize('UA-125643832-1');
+        ReactGA.pageview('/homepage');
+    }
     return (
         <div className="app">
             <Scoreboard />
