@@ -11,7 +11,7 @@ import osu from '../assets/images/carousel-images/osu.jpg';
 import raiders from '../assets/images/carousel-images/raiders.jpg';
 import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 
-const pictures = [backyardBend, osu, golfPromo, raiders, localRadio];
+const pictures = [backyardBend, osu, raiders, localRadio];
 
 class Carousel extends Component {
     constructor(props) {
@@ -105,10 +105,6 @@ class Carousel extends Component {
                     onClick={() => this.handleDotClick(3)}>
                 </div>
                 <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
-                    data="1"
-                    onClick={() => this.handleDotClick(4)}>
-                </div>
-                <div className={`carousel-dot ${slideCount === 5 ? 'dark-dot' : ''}`}
                     data="1"
                     onClick={() => this.handleDotClick(4)}>
                 </div>

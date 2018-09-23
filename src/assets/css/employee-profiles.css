@@ -50,6 +50,23 @@ h3 {
     border-radius: 100%;
 }
 
+.subtitle {
+    /* padding-bottom: 1vmin; */
+    margin-bottom: 1vmin;
+    background-color: rgba(65, 119, 185, 0.5);
+    line-height: 6vmin;
+    height: 6vmin;
+    transition: 0.3s;
+}
+
+.subtitle:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    background-color: #739DD2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* for desktop*/
 
 @media only screen and (min-width: 767px) {
