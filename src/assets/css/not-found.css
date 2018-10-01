@@ -1,0 +1,45 @@
+
+
+.not-found-pic{
+    display: block;
+    width: 100%;
+}
+
+.not-found-text{
+    margin: 1vh;
+}
+
+/*for tablet*/
+
+@media only screen and (min-width: 767px) and (max-width: 1300px) {
+    .not-found-pic{
+        padding-top: 200px;
+        width: 50%;
+        margin: 5vh auto;
+    }
+}
+
+/*for large screens*/
+
+@media only screen and (min-width: 1300px) {
+    .not-found-pic, .not-found-text{
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: 200px;
+    }
+    .not-found-pic{
+        width: 50%;
+        margin-bottom: 5vh;
+    }
+    
+    .not-found-text{
+        padding-top: 200px;
+        vertical-align: top;
+        margin: 1vh;
+        width: 20%;
+    }
+
+    .not-found-btn {
+        margin: 5vh;
+    }
+}
