@@ -21,8 +21,15 @@ a:-webkit-any-link{
     color: #444444;
 }
 
-a:visited {
+a:any-link{
+    color: #444444;
+    text-decoration-color: none;
+}
+
+a:visited, h3 {
     text-decoration: none;
+    text-decoration-color: none;
+    color: #444444;
 }
 
 @media only screen and (min-width: 767px) {
