@@ -4,8 +4,6 @@ import LandingPage from './landing-page';
 import Footer from './footer';
 import Scoreboard from './scoreboard';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-// import SplashPage from './login/SplashPage.jsx';
-// import NotFound from './NotFound.jsx';
 import About from './about';
 import Employees from './employee-profiles';
 import Advertise from './advertise';

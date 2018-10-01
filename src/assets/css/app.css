@@ -17,9 +17,12 @@ a {
     cursor: pointer;
 }
 
+a:-webkit-any-link{
+    color: #444444;
+}
+
 a:visited {
     text-decoration: none;
-    color: #444444;
 }
 
 @media only screen and (min-width: 767px) {
