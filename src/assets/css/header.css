@@ -69,11 +69,14 @@
         padding: 5px;
         margin: 5px;
         vertical-align: top;
-        color: white;
     }
     .header-container li,
     .header-container i {
         line-height: 30px;
+    }
+    .header-container .long-word,
+    .header-container i .long-word {
+        line-height: 15px;
     }
     .link-cont {
         display: inline-block;
@@ -81,6 +84,7 @@
         background-color: #739DD2;
         margin: 2px;
     }
+    
 }
 
 /*for tablet*/
@@ -90,6 +94,10 @@
         vertical-align: top;
         height: 70%;
         width: 65px;
+    }
+    .link-cont span,
+    .link-cont i {
+        color: white;
     }
     .header-container ul {
         height: 100%;
@@ -107,6 +115,19 @@
     }
     .header-container i {
         display: block;
+    }
+    .header-container li:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: white;
+    }
+}
+
+/*for medium screens */
+
+@media only screen and (min-width: 1001px) and (max-width: 1299px) {
+    .link-cont span,
+    .link-cont i {
+        color: white;
     }
 }
 
@@ -138,6 +159,7 @@
         color: #555;
         margin: 0;
         border-left: 2px solid rgb(180, 178, 178);
+        font-size: 16px;
         /* border-right: 2px solid rgb(180, 178, 178); */
     }
     .link-cont {
@@ -145,9 +167,6 @@
         height: initial;
         background-color: initial;
         margin: 0;
-    }
-    .header-container li {
-        font-size: 16px;
     }
     .header-container li:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
