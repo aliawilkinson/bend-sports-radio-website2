@@ -46,27 +46,37 @@ class Header extends Component {
                 <ul>
                     <div className="link-cont">
                         <Link to="./on-air-shows">
-                            <li className="first-li">On Air Shows <i className="fas fa-music"></i></li>
+                            <li className="long-word">
+                                <span>On Air Shows</span> <i className="fas fa-music"></i>
+                            </li>
                         </Link>
                     </div>
                     <div className="link-cont">
                         <Link to="win-free-stuff">
-                            <li>Win Free Stuff <i className="fas fa-trophy"></i></li>
+                            <li className="long-word">
+                                <span>Win Free Stuff</span> <i className="fas fa-trophy"></i>
+                            </li>
                         </Link>
                     </div>
                     <div className="link-cont">
                         <Link to="./advertise">
-                            <li>Advertise <i className="fas fa-bolt"></i></li>
+                            <li>
+                                <span>Advertise</span> <i className="fas fa-bolt"></i>
+                            </li>
                         </Link>
                     </div>
                     <div className="link-cont">
                         <Link to="/about">
-                            <li>About Us <i className="fas fa-users"></i></li>
+                            <li>
+                                <span>About Us</span> <i className="fas fa-users"></i>
+                            </li>
                         </Link>
                     </div>
                     <div className="link-cont">
                         <Link to="/">
-                            <li>Home <i className="fas fa-home"></i></li>
+                            <li>
+                                <span>Home</span> <i className="fas fa-home"></i>
+                            </li>
                         </Link>
                     </div>
                 </ul>
