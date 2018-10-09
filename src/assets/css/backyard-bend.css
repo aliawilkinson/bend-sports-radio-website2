@@ -1,0 +1,151 @@
+.byb-master-cont {
+    overflow-x: hidden;
+}
+
+.byb-master-cont a,
+.byb-promo-sponsors-cont h2 a {
+    color: #d29873;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.byb-promo-sponsors-cont h2 {
+    margin-top: 2vh;
+}
+
+.byb-info-radio-group {
+    background-color: rgba(115, 157, 210, 0.1);
+    padding-bottom: 3vh;
+}
+
+.title-cont,
+.title-cont img {
+    width: 100%;
+    margin: 1vh auto;
+    padding: 1vh auto;
+}
+
+.byb-sponsor-imgs-cont {
+    text-align: center;
+    margin: 1vh 0;
+}
+
+.byb-sponsor-imgs-cont img {
+    padding: 1vh 0;
+}
+
+.byb-promo-sponsors-cont {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.byb-promo-sponsors-cont h4, 
+.byb-promo-sponsors-cont img, {
+    text-align: center;
+}
+
+.byb-from-byb-cont {
+    text-align: left;
+    padding-bottom: 2vh;
+}
+
+.byb-from-byb-cont h2 {
+    text-align: center;
+    margin: 2vh;
+}
+
+.byb-from-byb-cont p {
+    padding: 1vh;
+}
+
+.byb-from-byb-cont iframe {
+    width: 100vw;
+    height: 56.25vw;
+    overflow-x: hidden;
+    padding-bottom: 1vh;
+}
+
+/*tablets*/
+
+@media only screen and (min-width: 900px) {
+    .byb-from-byb-cont iframe {
+        width: 50vw;
+        height: 23.12vw;
+        overflow-x: hidden;
+        padding-bottom: 1vh;
+        margin: auto;
+        display: inline-block;
+    }
+    .byb-from-byb-cont {
+        width: 80%;
+        margin: auto;
+    }
+
+    .byb-from-byb-cont .video {
+        text-align: center;
+    }
+    .video h2 {
+        background-color: white;
+    }
+    .byb-from-byb-cont p{
+        width: 50%;
+        display: inline-block;
+        padding-top: 5%;
+    }
+
+    .video iframe {
+        width: 50%;
+        float: left;
+        padding: 0 2% 2% 2%;
+    }
+}
+/*laptops*/
+
+@media only screen and (min-width: 1600px) {
+    .title-cont,
+    .title-cont img {
+        width: 90%;
+    }
+
+    .byb-sponsor-imgs-cont,
+    .byb-promo-sponsors-cont h4,
+    .byb-promo-sponsors-cont p {
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+        margin: initial;
+    }
+    .byb-sponsor-imgs-cont {
+        width: 60%;
+    }
+
+    .byb-sponsor-imgs-cont img {
+        margin: 0 5px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .byb-sponsor-imgs-cont img:hover {
+        margin: 0 5px;
+        position: relative;
+        background-color: yellow;
+    }
+
+    .byb-promo-sponsors-cont h2,
+    .byb-promo-sponsors-cont p {
+        position: relative;
+        bottom: 100px;
+    }
+    .byb-master-cont a{
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .byb-master-cont a:hover{
+        color: yellow;
+    }
+    .byb-sponsor-imgs-cont img {
+        padding: 0 5px;
+    }
+}

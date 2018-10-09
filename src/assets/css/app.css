@@ -34,7 +34,6 @@ a:visited, h3 {
 
 @media only screen and (min-width: 767px) {
     .landing-page,
-    .employees,
     .advertise,
     .contact,
     .winfreestuff,
@@ -43,5 +42,9 @@ a:visited, h3 {
         padding-top: 190px;
         min-height: 80vh;
         padding-bottom: 10vh;
+    }
+    .employees {
+        padding-top: 190px;
+        min-height: 80vh;
     }
 }
