@@ -20,7 +20,7 @@
 }
 
 .error-message {
-    bottom: 140px;
+    bottom: 180px;
 }
 
 .form-group {
@@ -69,7 +69,7 @@
         top: 325px;
     }
     .error-message {
-        bottom: 115px;
+        bottom: 160px;
     }
     .form-group {
         padding: 10px;

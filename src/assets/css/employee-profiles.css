@@ -6,6 +6,10 @@
     box-shadow: 0 15px 20px -20px rgba(0, 0, 0, 0.3);
 }
 
+.employee-cont p {
+    min-height: 20vh;
+}
+
 .employee-cont a,
 .employee-cont a:visited {
     text-decoration: none;
@@ -34,8 +38,7 @@
 }
 
 h3 {
-    top: 10px;
-    margin-bottom: 15px;
+    margin: 1vh;
 }
 
 .person-cont h4 {
@@ -44,6 +47,23 @@ h3 {
 
 .person-cont img {
     border-radius: 100%;
+}
+
+.subtitle {
+    /* padding-bottom: 1vmin; */
+    margin-bottom: 1vmin;
+    background-color: rgba(65, 119, 185, 0.5);
+    line-height: 6vmin;
+    height: 6vmin;
+    transition: 0.3s;
+}
+
+.subtitle:hover {
+    box-sizing: border-box;
+    border: 2px solid white;
+    color: white;
+    background-color: #739DD2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* for desktop*/

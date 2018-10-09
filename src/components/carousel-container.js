@@ -1,14 +1,19 @@
 
 import React, { Component } from 'react';
-import SlideOne from './carousel-slide1';
-import SlideTwo from './carousel-slide2';
-import SlideThree from './carousel-slide3';
-import SlideFour from './carousel-slide4';
+import Slide from './carousel-slide';
 import RightArrow from './carousel-left-arrow';
 import LeftArrow from './carousel-right-arrow';
 import '../assets/css/carousel.css';
+import inTheSeats from '../assets/images/intheseats_promo.jpg';
+import localRadio from '../assets/images/carousel-images/local.jpg';
+import golfPromo from '../assets/images/carousel-images/golf.jpg';
+import osu from '../assets/images/carousel-images/osu.jpg';
+import raiders from '../assets/images/carousel-images/raiders.jpg';
+import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 
-export default class Carousel extends Component {
+const pictures = [backyardBend, osu, raiders, localRadio];
+
+class Carousel extends Component {
     constructor(props) {
         super(props);
 
@@ -21,7 +26,7 @@ export default class Carousel extends Component {
     }
 
     autoNextSlide() {
-        if (this.state.slideCount === 4) {
+        if (this.state.slideCount === pictures.length) {
             return 1
         } else {
             return this.state.slideCount + 1
@@ -41,10 +46,22 @@ export default class Carousel extends Component {
 
     componentDidMount() {
         this.startSlides();
+        this.createDots();
     }
 
     componentWillUnmount() {
         clearInterval(this.timerID);
+    }
+
+    createDots() {
+        // console.log(pictures);
+        var dots = pictures.map((item, index) => {
+            return
+            (<div className={`carousel-dot ${slideCount === i ? 'dark-dot' : ''}`}
+                data="1"
+                onClick={() => this.handleDotClick(i)}>
+            </div>)
+        })
     }
 
     handleDotClick(data) {
@@ -52,7 +69,7 @@ export default class Carousel extends Component {
     }
 
     nextSlide() {
-        if (this.state.slideCount === 4) {
+        if (this.state.slideCount === pictures.length) {
             this.setState({ slideCount: 1 })
         } else {
             this.setState({ slideCount: this.state.slideCount + 1 })
@@ -61,7 +78,7 @@ export default class Carousel extends Component {
 
     previousSlide() {
         if (this.state.slideCount === 1) {
-            this.setState({ slideCount: 4 });
+            this.setState({ slideCount: pictures.length });
         } else {
             this.setState({ slideCount: this.state.slideCount - 1 })
         }
@@ -71,10 +88,7 @@ export default class Carousel extends Component {
         const { slideCount } = this.state;
         return (
             <div className="carousel">
-                {slideCount === 1 ? <SlideOne /> : null}
-                {slideCount === 2 ? <SlideTwo /> : null}
-                {slideCount === 3 ? <SlideThree /> : null}
-                {slideCount === 4 ? <SlideFour /> : null}
+                <Slide img={pictures[this.state.slideCount - 1]} slideNum={slideCount} />
 
                 <RightArrow previousSlide={this.previousSlide} />
                 <LeftArrow nextSlide={this.nextSlide} />
@@ -98,3 +112,5 @@ export default class Carousel extends Component {
         );
     }
 }
+
+export default Carousel;

@@ -17,14 +17,23 @@ a {
     cursor: pointer;
 }
 
-a:visited {
+a:-webkit-any-link{
+    color: #444444;
+}
+
+a:any-link{
+    color: #444444;
+    text-decoration-color: none;
+}
+
+a:visited, h3 {
     text-decoration: none;
+    text-decoration-color: none;
     color: #444444;
 }
 
 @media only screen and (min-width: 767px) {
     .landing-page,
-    .employees,
     .advertise,
     .contact,
     .winfreestuff,
@@ -33,5 +42,9 @@ a:visited {
         padding-top: 190px;
         min-height: 80vh;
         padding-bottom: 10vh;
+    }
+    .employees {
+        padding-top: 190px;
+        min-height: 80vh;
     }
 }

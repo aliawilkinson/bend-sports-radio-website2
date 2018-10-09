@@ -77,26 +77,28 @@ class Footer extends Component {
                 </div>
                 <div className="offices-cont">
                     <h4>Fox Sports 94.9 Offices</h4>
-                    <div>
-                        <div>
-                            <i className="far fa-building">
-                            </i>
-                        </div>
-                        <p>
-                            <a target="blank" href="https://www.google.com/maps/place/345+SW+Cyber+Dr+%23101,+Bend,+OR+97702/@44.0468535,-121.3280864,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8c7d3d2e062d1:0xb84f128570c138ac!8m2!3d44.0468497!4d-121.3258977">
+                    <div className="link">
+                        <a target="blank" href="https://www.google.com/maps/place/345+SW+Cyber+Dr+%23101,+Bend,+OR+97702/@44.0468535,-121.3280864,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8c7d3d2e062d1:0xb84f128570c138ac!8m2!3d44.0468497!4d-121.3258977">
+                            <div>
+                                <i className="far fa-building">
+                                </i>
+                            </div>
+                            <p>
                                 345 SW Cyber Dr<br />
                                 #101<br />
                                 Bend, OR 97702
-                            </a>
-                        </p>
+                            </p>
+                        </a>
                     </div>
-                    <div>
-                        <div>
-                            <i className="fas fa-phone"></i>
-                        </div>
-                        <p>
-                            <a href="tel:+1-541-388-3300">(541) 388-3300</a>
-                        </p>
+                    <div className="link">
+                        <a href="tel:+1-541-388-3300">
+                            <div>
+                                <i className="fas fa-phone"></i>
+                            </div>
+                            <p>
+                                (541) 388-3300
+                            </p>
+                        </a>
                     </div>
                 </div>
                 <div className="copyright-text">

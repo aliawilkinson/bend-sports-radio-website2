@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import golf from '../assets/images/golf_promo.jpg';
 import foreigner from '../assets/images/foreignerpromo.jpg';
+import tssford from '../assets/images/tssford.jpeg';
 import '../assets/css/winfreestuff.css';
 
 const WinFreeStuff = () => {
@@ -18,12 +19,6 @@ const WinFreeStuff = () => {
                 <p>You could win FREE GOLF with cart for you and three friends.</p>
 
                 <p>Plus you could also win a $100 Gift Card to Pro Golf!</p>
-            </div>
-            <div className="promo-card">
-                <img src={foreigner} />
-                <p>Fox Sports 94.9 welcomes Foreigner &amp; Whitesnake to the Sunlight Supply Amphitheater.</p>
-
-                <p>Listen for your chance to win FREE TICKETS to see Foreigner &amp; Whitesnake LIVE on the Juke Box Heroes Tour on July 28 ONLY from Fox Sports 94.9!</p>
             </div>
         </div>
     )
