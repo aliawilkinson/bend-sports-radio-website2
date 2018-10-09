@@ -14,6 +14,7 @@ import WinFreeStuff from './winfreestuff';
 import HeaderChange from './header';
 import NotFound from './not-found';
 import ReactGA from 'react-ga';
+import BackyardBend from './backyard-bend';
 
 const App = () => {
     function initializeReactGA() {
@@ -36,6 +37,7 @@ const App = () => {
                 <Route path='/listen-live' component={ListenLive} />
                 <Route path='/*' component={NotFound} />
             </Switch>
+            <BackyardBend />
             <Footer />
         </div>
     )

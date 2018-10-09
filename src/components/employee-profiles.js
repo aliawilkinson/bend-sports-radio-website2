@@ -12,6 +12,30 @@ import jason from '../assets/images/employees/jason-smith.jpg';
 
 var employeeProfiles = [
     {
+        name: 'Dan Patrick',
+        img: dan,
+        show: 'The Dan Patrick Show',
+        subtitle: "Monday – Friday 6am to 9 am",
+        blurb: "The Dan Patrick Show features the most extensive A-list interviews from the world of sports and offers Dan's unique perspective and dry sense of humor on the top stories and personalities of the day. Check them out ",
+        link: "http://www.danpatrick.com/dan/"
+    },
+    {
+        name: 'Colin Cowherd',
+        img: colin,
+        show: 'The Herd with Colin Cowherd',
+        subtitle: "Monday – Friday 9 am – Noon",
+        blurb: "The Herd with Colin Cowherd is opinionated and topic-driven journey through the top sports stories of the day. Colin storytelling ability entertains while making listeners think, laugh, and immediately react. Check them out ",
+        link: "https://foxsportsradio.iheart.com/featured/the-herd-with-colin-cowherd/about/"
+    },
+    {
+        name: 'Doug Gottlieb',
+        img: doug,
+        show: 'The Doug Gottlieb Show',
+        subtitle: "Monday – Friday Noon – 3pm",
+        blurb: "Doug Gottlieb is a former NCAA collegiate and professional (USBL) basketball player, as well as a basketball analyst and sports talk radio host. Check them out ",
+        link: "https://en.wikipedia.org/wiki/Doug_Gottlieb"
+    },
+    {
         name: 'Cody Mac and BP',
         img: codyBP,
         show: 'In The Seats with Cody Mac & BP',
@@ -28,36 +52,12 @@ var employeeProfiles = [
         link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
     },
     {
-        name: 'Jason Smith',
+        name: 'Jayson Smith',
         img: jason,
-        show: 'The Jason Smith Show',
+        show: 'The Jayson Smith Show',
         subtitle: "Monday – Friday 8pm-11pm",
         blurb: "Emmy-award winning producer and NFL Network host Jason Smith brings his extensive experience in Sports Talk entertainment to late nights on FOX Sports Radio, providing analysis on the day in sports and updates on the games in play, while engaging in entertaining conversations with listeners to close out the day and prepare for tomorrow. Check them out ",
         link: "https://foxsportsradio.iheart.com/featured/the-jason-smith-show/"
-    },
-    {
-        name: 'Dan Patrick',
-        img: dan,
-        show: 'The Dan Patrick Show',
-        subtitle: "Monday – Friday 6am to 10 am",
-        blurb: "The Dan Patrick Show features the most extensive A-list interviews from the world of sports and offers Dan's unique perspective and dry sense of humor on the top stories and personalities of the day. Check them out ",
-        link: "http://www.danpatrick.com/dan/"
-    },
-    {
-        name: 'Colin Cowherd',
-        img: colin,
-        show: 'The Herd with Colin Cowherd',
-        subtitle: "Monday – Friday 10 am – Noon",
-        blurb: "The Herd with Colin Cowherd is opinionated and topic-driven journey through the top sports stories of the day. Colin storytelling ability entertains while making listeners think, laugh, and immediately react. Check them out ",
-        link: "https://foxsportsradio.iheart.com/featured/the-herd-with-colin-cowherd/about/"
-    },
-    {
-        name: 'Doug Gottlieb',
-        img: doug,
-        show: 'The Doug Gottlieb Show',
-        subtitle: "Monday – Friday Noon – 3pm",
-        blurb: "Doug Gottlieb is a former NCAA collegiate and professional (USBL) basketball player, as well as a basketball analyst and sports talk radio host. Check them out ",
-        link: "https://en.wikipedia.org/wiki/Doug_Gottlieb"
     },
     {
         name: 'Steve Gorman',
@@ -71,7 +71,7 @@ var employeeProfiles = [
         name: 'JT "The Brick"',
         img: jt,
         show: "Sports with The Brick",
-        subtitle: "",
+        subtitle: '',
         blurb: "You won't find a more fast-paced, high energy show at night than J .T. The Brick. A former stock broker, J.T. parlayed his dream of becoming a Sports Talk host into a full-time radio job after winning Jim Rome's inaugural 'Smack-Off' championship title in 1995. Using his outspoken, big, booming voice, J.T. hosts radio's most interactive show as he fields calls from listeners across the country. Joined each day by co-host Tomm Looney, their outspoken dialogue is second to none, as they bring a new attitude to nighttime sports talk radio. Check them out ",
         link: "https://foxsportsradio.iheart.com/featured/jt-the-brick/"
     }
