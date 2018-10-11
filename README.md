@@ -13,6 +13,12 @@ This website is a promotional website for Fox Sports 94.9 sports radio station i
 
 * Custom contact page with error validation, built in React and Node.js
 
+* Custom contact page with error validation, built in React and Node.js
+
+* Static pages for giveaways, advertising, and about
+
+* element for paid advertiser at bottom of the site
+
 
 ## Technologies
 * React.js
