@@ -2,7 +2,7 @@
 Alia Wilkinson
 
 ## Summary
-This website is a promotional website for Fox Sports 94.9 in Central Oregon. 
+This website is a promotional website for Fox Sports 94.9 sports radio station in Central Oregon. 
 
 ## Feature List
 * Custom audio element that saves the radio station $100 per month.
