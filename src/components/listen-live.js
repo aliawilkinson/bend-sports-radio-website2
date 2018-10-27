@@ -26,6 +26,7 @@ class ListenLive extends Component {
     playAudio() {
         this.setState({ playing: !this.state.playing });
         if (this.state.playing) {
+            console.log("here");
             this.player.pause();
             this.setState({
                 icon: "fa fa-play-circle play fa-4x"
@@ -50,8 +51,8 @@ class ListenLive extends Component {
                 </div>
 
                 <div>
-                    <audio ref={e => this.player = e} className="player" preload="false">
-                        <source src="https://18543.live.streamtheworld.com/KCOEFMAAC_SC" />
+                    <audio ref={e => this.player = e} className="player" preload="true">
+                        <source src="https://18543.live.streamtheworld.com/KCOEFMAAC.aac" />
                         Your browser does not support the audio element. Please switch to a modern browser (chrome, firefox, edge, etc.)
                     </audio>
                 </div>
