@@ -51,7 +51,7 @@ class ListenLive extends Component {
                 </div>
 
                 <div>
-                    <audio ref={e => this.player = e} className="player" preload="true">
+                    <audio ref={e => this.player = e} className="player" preload="auto">
                         <source src="https://18543.live.streamtheworld.com/KCOEFMAAC.aac" />
                         Your browser does not support the audio element. Please switch to a modern browser (chrome, firefox, edge, etc.)
                     </audio>
