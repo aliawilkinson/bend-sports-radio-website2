@@ -12,8 +12,6 @@ class ListenLive extends Component {
             icon: "fa fa-play-circle play fa-4x",
             show: props.show
         }
-
-        this.playAudio = this.playAudio.bind(this);
     }
 
     playAudio() {
@@ -32,13 +30,6 @@ class ListenLive extends Component {
         }
     }
 
-    handleKeyPress(e) {
-        if (e.keyCode == 32) {
-            console.log("pressed");
-            this.playAudio();
-        }
-    }
-
     render() {
         return (
             <div className={`listen-live-cont ${this.props.show}`} onClick={this.playAudio.bind(this)}>
@@ -52,7 +43,7 @@ class ListenLive extends Component {
                 <input type="text" />
 
                 <div>
-                    <audio ref={e => this.player = e} className="player" preload="auto" onKeyDown={document.body.onkeyup = this.handleKeyPress.bind(this)}>
+                    <audio ref={e => this.player = e} className="player" preload="auto">
                         <source src="https://18543.live.streamtheworld.com/KCOEFMAAC.aac" />
                         Your browser does not support the audio element. Please switch to a modern browser (chrome, firefox, edge, etc.)
                     </audio>
