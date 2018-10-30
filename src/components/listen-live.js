@@ -12,30 +12,30 @@ class ListenLive extends Component {
             icon: "fa fa-play-circle play fa-4x",
             show: props.show
         }
-    }
 
-    onKeyPress() {
-        onKeyPress(32)
-        // console.log(event);
-        event.addEventListener("spacebar", this.handleKeyPress, false);
-        if (event.keyCode === 32) {
-            // console.log('key pressed');
-        }
+        this.playAudio = this.playAudio.bind(this);
     }
 
     playAudio() {
-        this.setState({ playing: !this.state.playing });
         if (this.state.playing) {
-            console.log("here");
             this.player.pause();
             this.setState({
-                icon: "fa fa-play-circle play fa-4x"
+                icon: "fa fa-play-circle play fa-4x",
+                playing: false
             })
         } else {
             this.player.play();
             this.setState({
-                icon: "fas fa-pause-circle fa-4x pause"
+                icon: "fas fa-pause-circle fa-4x pause",
+                playing: true
             })
+        }
+    }
+
+    handleKeyPress(e) {
+        if (e.keyCode == 32) {
+            console.log("pressed");
+            this.playAudio();
         }
     }
 
@@ -49,9 +49,10 @@ class ListenLive extends Component {
                 <div className="listen-child arrow-cont">
                     <i className={this.state.icon} aria-hidden="true"></i>
                 </div>
+                <input type="text" />
 
                 <div>
-                    <audio ref={e => this.player = e} className="player" preload="auto">
+                    <audio ref={e => this.player = e} className="player" preload="auto" onKeyDown={document.body.onkeyup = this.handleKeyPress.bind(this)}>
                         <source src="https://18543.live.streamtheworld.com/KCOEFMAAC.aac" />
                         Your browser does not support the audio element. Please switch to a modern browser (chrome, firefox, edge, etc.)
                     </audio>
