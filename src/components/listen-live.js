@@ -14,15 +14,6 @@ class ListenLive extends Component {
         }
     }
 
-    onKeyPress() {
-        onKeyPress(32)
-        // console.log(event);
-        event.addEventListener("spacebar", this.handleKeyPress, false);
-        if (event.keyCode === 32) {
-            // console.log('key pressed');
-        }
-    }
-
     playAudio() {
         this.setState({ playing: !this.state.playing });
         if (this.state.playing) {
