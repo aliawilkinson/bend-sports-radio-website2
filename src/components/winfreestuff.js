@@ -4,6 +4,7 @@ import golf from '../assets/images/golf_promo.jpg';
 import foreigner from '../assets/images/foreignerpromo.jpg';
 import tssford from '../assets/images/tssford.jpeg';
 import '../assets/css/winfreestuff.css';
+import winCar from '../assets/images/carousel-images/win-car.png';
 
 const WinFreeStuff = () => {
     return (
@@ -19,6 +20,12 @@ const WinFreeStuff = () => {
                 <p>You could win FREE GOLF with cart for you and three friends.</p>
 
                 <p>Plus you could also win a $100 Gift Card to Pro Golf!</p>
+            </div>
+            <div className="promo-card">
+                <img src={winCar} />
+                <p>FOX Sports 949 wants to hook you up with a FREE CAR!</p>
+
+                <p>Visit our <a target="blank" href="https://www.facebook.com/FoxSports949">facebook page</a> for your chance to get entered and listen 94.9 Fox Sports Central Oregon to win!</p>
             </div>
         </div>
     )
