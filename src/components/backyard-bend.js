@@ -41,8 +41,7 @@ const BackyardBend = () => {
             <div className="byb-from-byb-cont">
                 <div>
                     <div className="video">
-                        <h2>Video: Fall Colors in Bend,
-                        October 2018</h2>
+                        <h2>Video: Fall Colors in Bend</h2>
                         <iframe src="https://www.youtube.com/embed/TZLrIqF8PC8"
                             frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
                         </iframe>
