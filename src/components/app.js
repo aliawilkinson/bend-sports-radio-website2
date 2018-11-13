@@ -15,6 +15,7 @@ import HeaderChange from './header';
 import NotFound from './not-found';
 import ReactGA from 'react-ga';
 import BackyardBend from './backyard-bend';
+import HolidayFilmSeries from './holidayFilmSeries';
 
 const App = () => {
     function initializeReactGA() {
@@ -38,6 +39,7 @@ const App = () => {
                 <Route path='/*' component={NotFound} />
             </Switch>
             <BackyardBend />
+            <HolidayFilmSeries />
             <Footer />
         </div>
     )

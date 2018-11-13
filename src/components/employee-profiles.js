@@ -63,36 +63,6 @@ var employeeProfiles = [
 
 const Employees = () => {
 
-    const circularText = (txt, radius) => {
-        var finalElements = [];
-        txt = txt.split("");
-        var deg = 60 / txt.length,
-            origin = 20;
-
-        txt.forEach((ea) => {
-            var index = Math.random();
-            index++;
-            var style = {
-                height: `${radius}vw`,
-                position: `absolute`,
-                transform: `rotate(${origin}deg)`,
-                transformOrigin: `0 100%`,
-                zIndex: '1',
-                top: '-5vw',
-                right: '45%',
-                textShadow: '0 0 3px #FF0000, 0 0 5px #0000FF',
-                fontSize: '1em'
-            };
-
-            origin += deg;
-            return (
-                finalElements.push(<p key={index} style={style}>{ea}</p>)
-            )
-            index++;
-        });
-        return (finalElements);
-    }
-
     const employees = employeeProfiles.map((employee, index) => {
         return (
             <div key={index} className="employee-cont">
@@ -101,9 +71,6 @@ const Employees = () => {
                     <div className="person-cont">
 
                         <img src={employee['img']} />
-                        {/* {circularText(employee['name'], 30)} */}
-                        {/* {circularText(employee['show'], 32)} */}
-
                     </div>
                     <h3>{employee['show']}</h3>
                     <h4 className="subtitle">
