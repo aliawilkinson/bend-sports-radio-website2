@@ -8,11 +8,11 @@ import inTheSeats from '../assets/images/intheseats_promo.jpg';
 import localRadio from '../assets/images/carousel-images/local.jpg';
 import golfPromo from '../assets/images/carousel-images/golf.jpg';
 import osu from '../assets/images/carousel-images/osu.jpg';
-import raiders from '../assets/images/carousel-images/raiders.jpg';
+import tokyo from '../assets/images/carousel-images/tokyo.jpg';
 import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 import winCar from '../assets/images/carousel-images/win-car.png';
 
-const pictures = [winCar, backyardBend, osu, raiders, localRadio];
+const pictures = [ tokyo, winCar, backyardBend, osu,localRadio];
 
 class Carousel extends Component {
     constructor(props) {
