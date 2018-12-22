@@ -12,7 +12,7 @@ import tokyo from '../assets/images/carousel-images/tokyo.jpg';
 import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 import winCar from '../assets/images/carousel-images/win-car.png';
 
-const pictures = [ tokyo, winCar, backyardBend, osu,localRadio];
+const pictures = [backyardBend, osu, localRadio];
 
 class Carousel extends Component {
     constructor(props) {
@@ -104,14 +104,6 @@ class Carousel extends Component {
                 <div className={`carousel-dot ${slideCount === 3 ? 'dark-dot' : ''}`}
                     data="1"
                     onClick={() => this.handleDotClick(3)}>
-                </div>
-                <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
-                    data="1"
-                    onClick={() => this.handleDotClick(4)}>
-                </div>
-                <div className={`carousel-dot ${slideCount === 5 ? 'dark-dot' : ''}`}
-                    data="1"
-                    onClick={() => this.handleDotClick(5)}>
                 </div>
             </div>
         );
