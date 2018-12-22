@@ -41,14 +41,13 @@ const BackyardBend = () => {
             <div className="byb-from-byb-cont">
                 <div>
                     <div className="video">
-                        <h2>Video: Fall Colors in Bend</h2>
-                        <iframe src="https://www.youtube.com/embed/TZLrIqF8PC8"
+                        <h2>Video: BYB Last Minute Gift Guide Vol 1</h2>
+                        <iframe src="https://www.youtube.com/embed/AgkmX8dVRSE"
                             frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
                         </iframe>
                     </div>
                     <p>
-                        The seasons are a changing and that means shorter days, cooler weather, and fall colors.
-                        Here’s a short we made to celebrate this change. Hope you enjoy.
+                        We took some laps around town to find some last minute gift ideas for the Backyard Bender on your list. It’s great to support our local outdoor gear retailers. They provide knowledge, support, service, gear when we need it and local jobs for the passionate people we need in our community . Check it out and shop local if you can. Merry Christmas and Happy Holidays!!!
                 </p>
                     <p>
                         Our thanks to Subaru of Bend, Powder House Ski and Snowboard and Mother’s Juice Cafe for their help in supporting <a href="https://backyardbend.com/">BackyardBend.com.</a>
