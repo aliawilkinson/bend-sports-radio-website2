@@ -81,7 +81,7 @@
     .link-cont {
         display: inline-block;
         height: 30px;
-        background-color: #739DD2;
+        background-color: #003055;
         margin: 2px;
     }
     
@@ -171,6 +171,6 @@
     .header-container li:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: white;
-        background-color: #739DD2;
+        background-color: #003055;
     }
 }

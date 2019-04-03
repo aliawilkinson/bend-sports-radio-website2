@@ -42,13 +42,14 @@ const BackyardBend = () => {
                 <div>
                     <div className="video">
                         <h2>Video: BYB Last Minute Gift Guide Vol 1</h2>
-                        <iframe src="https://www.youtube.com/embed/AgkmX8dVRSE"
+                        <iframe src="https://www.youtube.com/embed/TeDjTfMo0sM"
                             frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
                         </iframe>
                     </div>
                     <p>
-                        We took some laps around town to find some last minute gift ideas for the Backyard Bender on your list. It’s great to support our local outdoor gear retailers. They provide knowledge, support, service, gear when we need it and local jobs for the passionate people we need in our community . Check it out and shop local if you can. Merry Christmas and Happy Holidays!!!
-                </p>
+                        We found someone who is really making a difference in Central Oregon. Jared Leisek is cleaning our rivers and lakes one dive at a time. He's removed over 6,000 lbs of trash and other interesting stuff in just the last 6 months. Check out this local who really is "Community Inspired"
+                        <a target="_blank" href="https://backyardbend.com/#home-featured-vid"> here.</a>
+                    </p>
                     <p>
                         Our thanks to Subaru of Bend, Powder House Ski and Snowboard and Mother’s Juice Cafe for their help in supporting <a href="https://backyardbend.com/">BackyardBend.com.</a>
                     </p>

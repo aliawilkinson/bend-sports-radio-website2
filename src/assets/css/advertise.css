@@ -18,8 +18,8 @@
 
 .background {
     background-image: url('../images/carousel-images/bend.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
     padding: 1vh;
 }
 
