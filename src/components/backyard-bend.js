@@ -41,15 +41,15 @@ const BackyardBend = () => {
             <div className="byb-from-byb-cont">
                 <div>
                     <div className="video">
-                        <h2>Video: Fall Colors in Bend</h2>
-                        <iframe src="https://www.youtube.com/embed/TZLrIqF8PC8"
+                        <h2>Video: BYB Last Minute Gift Guide Vol 1</h2>
+                        <iframe src="https://www.youtube.com/embed/TeDjTfMo0sM"
                             frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
                         </iframe>
                     </div>
                     <p>
-                        The seasons are a changing and that means shorter days, cooler weather, and fall colors.
-                        Here’s a short we made to celebrate this change. Hope you enjoy.
-                </p>
+                        We found someone who is really making a difference in Central Oregon. Jared Leisek is cleaning our rivers and lakes one dive at a time. He's removed over 6,000 lbs of trash and other interesting stuff in just the last 6 months. Check out this local who really is "Community Inspired"
+                        <a target="_blank" href="https://backyardbend.com/#home-featured-vid"> here.</a>
+                    </p>
                     <p>
                         Our thanks to Subaru of Bend, Powder House Ski and Snowboard and Mother’s Juice Cafe for their help in supporting <a href="https://backyardbend.com/">BackyardBend.com.</a>
                     </p>

@@ -2,6 +2,7 @@
 import React from 'react';
 import '../assets/css/employee-profiles.css';
 import tracee from '../assets/images/employees/tracee.jpg';
+import oddcouple from '../assets/images/employees/odd_couple.jpg';
 import dan from '../assets/images/employees/dan-patrick.jpg';
 import colin from '../assets/images/employees/colin-cowherd.jpg';
 import doug from '../assets/images/employees/doug-gottlieb.jpg';
@@ -36,12 +37,20 @@ var employeeProfiles = [
         link: "https://en.wikipedia.org/wiki/Doug_Gottlieb"
     },
     {
-        name: 'Cody Mac and BP',
+        name: 'Cody Mac & BP',
         img: codyBP,
         show: 'In The Seats with Cody Mac & BP',
         subtitle: "Monday – Friday 4pm – 5pm",
         blurb: "“Your not so local, local sports show” brings local sports and and National sports with a Central Oregon view.  In the Seats is your show for Beavers, Ducks Trailblazers and all sport you care about in Oregon. Lots of giveaways and a fast pace makes this the fastest hour in sports radio. Check them out ",
         link: "https://www.facebook.com/FoxSports949/"
+    },
+    {
+        name: 'Chris Broussard & Rob Parker',
+        img: oddcouple,
+        show: 'The Odd Couple',
+        subtitle: "Monday – Friday 5pm-8pm",
+        blurb: "Sports personalities collide as Fox Sports Radio hosts and FS1 analysts Chris Broussard and Rob Parker partner to give listeners a dynamic discussion as these two polar opposites take listeners through the biggest hits in sports ",
+        link: "https://foxsportsradio.iheart.com/featured/the-odd-couple-with-chris-broussard-rob-parker/"
     },
     {
         name: 'Tracee Tuesday',
@@ -55,7 +64,7 @@ var employeeProfiles = [
         name: 'Jayson Smith',
         img: jason,
         show: 'The Jayson Smith Show',
-        subtitle: "Monday – Friday 8pm-11pm",
+        subtitle: "Monday – Friday 7pm-11pm",
         blurb: "Emmy-award winning producer and NFL Network host Jason Smith brings his extensive experience in Sports Talk entertainment to late nights on FOX Sports Radio, providing analysis on the day in sports and updates on the games in play, while engaging in entertaining conversations with listeners to close out the day and prepare for tomorrow. Check them out ",
         link: "https://foxsportsradio.iheart.com/featured/the-jason-smith-show/"
     }
