@@ -53,20 +53,20 @@ var employeeProfiles = [
         link: "https://foxsportsradio.iheart.com/featured/the-odd-couple-with-chris-broussard-rob-parker/"
     },
     {
-        name: 'Jayson Smith',
-        img: jason,
-        show: 'The Jayson Smith Show',
-        subtitle: "Monday – Friday 7pm-11pm",
-        blurb: "Emmy-award winning producer and NFL Network host Jason Smith brings his extensive experience in Sports Talk entertainment to late nights on FOX Sports Radio, providing analysis on the day in sports and updates on the games in play, while engaging in entertaining conversations with listeners to close out the day and prepare for tomorrow. Check them out ",
-        link: "https://foxsportsradio.iheart.com/featured/the-jason-smith-show/"
-    },
-    {
         name: 'Tracee Tuesday',
         img: tracee,
         show: 'The Fox Sports Report',
         subtitle: "Daily",
         blurb: "As a Oregon local and sports fan, Tracee loves to entertain listeners with the Fox Sports News Report. A sports fan from very young age, Tracee ran track and played basketball and softball. Originally from the San Francisco Bay Area, Tracee’s favorite teams include: Oakland Raiders and Golden State Warriors. Check our her page ",
         link: "https://www.facebook.com/pg/FoxSports949/videos/?ref=page_internals"
+    },
+    {
+        name: 'Jayson Smith',
+        img: jason,
+        show: 'The Jayson Smith Show',
+        subtitle: "Monday – Friday 7pm-11pm",
+        blurb: "Emmy-award winning producer and NFL Network host Jason Smith brings his extensive experience in Sports Talk entertainment to late nights on FOX Sports Radio, providing analysis on the day in sports and updates on the games in play, while engaging in entertaining conversations with listeners to close out the day and prepare for tomorrow. Check them out ",
+        link: "https://foxsportsradio.iheart.com/featured/the-jason-smith-show/"
     }
 ]
 

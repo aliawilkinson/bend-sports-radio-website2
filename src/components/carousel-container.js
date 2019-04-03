@@ -110,7 +110,7 @@ class Carousel extends Component {
                     data="1"
                     onClick={() => this.handleDotClick(3)}>
                 </div>
-            </div>
+            </div >
         );
     }
 }
