@@ -4,6 +4,7 @@ import golf from '../assets/images/golf_promo.jpg';
 import foreigner from '../assets/images/foreignerpromo.jpg';
 import tssford from '../assets/images/tssford.jpeg';
 import '../assets/css/winfreestuff.css';
+import winCar from '../assets/images/carousel-images/win-car.png';
 
 const WinFreeStuff = () => {
     return (

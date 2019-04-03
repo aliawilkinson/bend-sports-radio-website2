@@ -4,14 +4,13 @@ import Slide from './carousel-slide';
 import RightArrow from './carousel-left-arrow';
 import LeftArrow from './carousel-right-arrow';
 import '../assets/css/carousel.css';
-import inTheSeats from '../assets/images/intheseats_promo.jpg';
+import inTheSeats from '../assets/images/carousel-images/in_the_seats.jpg';
 import localRadio from '../assets/images/carousel-images/local.jpg';
 import golfPromo from '../assets/images/carousel-images/golf.jpg';
 import osu from '../assets/images/carousel-images/osu.jpg';
-import raiders from '../assets/images/carousel-images/raiders.jpg';
 import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 
-const pictures = [backyardBend, osu, raiders, localRadio];
+const pictures = [golfPromo, inTheSeats, osu, backyardBend, localRadio];
 
 class Carousel extends Component {
     constructor(props) {
@@ -54,7 +53,6 @@ class Carousel extends Component {
     }
 
     createDots() {
-        // console.log(pictures);
         var dots = pictures.map((item, index) => {
             return
             (<div className={`carousel-dot ${slideCount === i ? 'dark-dot' : ''}`}
@@ -106,9 +104,13 @@ class Carousel extends Component {
                 </div>
                 <div className={`carousel-dot ${slideCount === 4 ? 'dark-dot' : ''}`}
                     data="1"
-                    onClick={() => this.handleDotClick(4)}>
+                    onClick={() => this.handleDotClick(3)}>
                 </div>
-            </div>
+                <div className={`carousel-dot ${slideCount === 5 ? 'dark-dot' : ''}`}
+                    data="1"
+                    onClick={() => this.handleDotClick(3)}>
+                </div>
+            </div >
         );
     }
 }
