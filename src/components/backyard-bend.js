@@ -30,7 +30,7 @@ const BackyardBend = () => {
                         </a>
                     </div>
                     <p>
-                        At <span><a target="_blank" href="https://backyardbend.com/">Backyard Bend</a></span>, we want to know where you’ve been and what you’ve been up to.
+                        At <span><a target="_blank" href="https://sbackyardbend.com/">Backyard Bend</a></span>, we want to know where you’ve been and what you’ve been up to.
                         Hashtag your <a target="_blank" href="https://www.instagram.com/explore/tags/backyardbend/">instagram</a> and <span><a target="_blank" href="https://twitter.com/hashtag/backyardbend">twitter</a></span> posts and
                         make sure to geotag your location to be featured on the site.
                     </p>
@@ -42,16 +42,16 @@ const BackyardBend = () => {
                 <div>
                     <div className="video">
                         <h2>Video: BYB Last Minute Gift Guide Vol 1</h2>
-                        <iframe src="https://www.youtube.com/embed/TeDjTfMo0sM"
+                        <iframe src="https://youtube.com/embed/fiZgHzjZp8g"
                             frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen>
                         </iframe>
                     </div>
                     <p>
-                        We found someone who is really making a difference in Central Oregon. Jared Leisek is cleaning our rivers and lakes one dive at a time. He's removed over 6,000 lbs of trash and other interesting stuff in just the last 6 months. Check out this local who really is "Community Inspired"
+                        There are people doing great things in Central Oregon just for the sake of making our community better. The moto community got together and decided to clean up the public areas near China Hat. Big thanks to the Moto Shop for organizing the effort. This is "Community Inspired".
                         <a target="_blank" href="https://backyardbend.com/#home-featured-vid"> here.</a>
                     </p>
                     <p>
-                        Our thanks to Subaru of Bend, Powder House Ski and Snowboard and Mother’s Juice Cafe for their help in supporting <a href="https://backyardbend.com/">BackyardBend.com.</a>
+                        Our thanks to Subaru of Bend and Mother’s Juice Cafe for their help in supporting <a href="https://backyardbend.com/">BackyardBend.com.</a>
                     </p>
                 </div>
             </div>
