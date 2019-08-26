@@ -5,12 +5,10 @@ import RightArrow from './carousel-left-arrow';
 import LeftArrow from './carousel-right-arrow';
 import '../assets/css/carousel.css';
 import inTheSeats from '../assets/images/carousel-images/in_the_seats.jpg';
-import localRadio from '../assets/images/carousel-images/local.jpg';
 import golfPromo from '../assets/images/carousel-images/golf.jpg';
-import osu from '../assets/images/carousel-images/osu.jpg';
 import backyardBend from '../assets/images/carousel-images/backyard_bend.jpg';
 
-const pictures = [golfPromo, inTheSeats, osu, backyardBend, localRadio];
+const pictures = [golfPromo, inTheSeats, backyardBend];
 
 class Carousel extends Component {
     constructor(props) {
